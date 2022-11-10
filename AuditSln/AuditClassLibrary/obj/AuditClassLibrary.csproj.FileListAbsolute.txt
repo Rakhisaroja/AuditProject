@@ -1,0 +1,50 @@
+G:\AuditNew\AuditSln\AuditClassLibrary\bin\Debug\AuditClassLibrary.pdb
+G:\AuditNew\AuditSln\AuditClassLibrary\obj\Debug\ResolveAssemblyReference.cache
+G:\AuditNew\AuditSln\AuditClassLibrary\obj\Debug\AuditClassLibrary.dll
+G:\AuditNew\AuditSln\AuditClassLibrary\obj\Debug\AuditClassLibrary.pdb
+E:\AuditNew\AuditSln\AuditClassLibrary\bin\Debug\AuditClassLibrary.pdb
+E:\AuditNew\AuditSln\AuditClassLibrary\obj\Debug\ResolveAssemblyReference.cache
+E:\AuditNew\AuditSln\AuditClassLibrary\obj\Debug\AuditClassLibrary.dll
+E:\AuditNew\AuditSln\AuditClassLibrary\obj\Debug\AuditClassLibrary.pdb
+E:\AuditNew\AuditSln\AuditClassLibrary\bin\Debug\AuditClassLibrary.dll
+G:\AuditNew\AuditSln\AuditClassLibrary\bin\Debug\AuditClassLibrary.dll
+G:\AuditNewdesign\AuditSln\AuditClassLibrary\bin\Debug\AuditClassLibrary.dll
+G:\AuditNewdesign\AuditSln\AuditClassLibrary\bin\Debug\AuditClassLibrary.pdb
+G:\AuditNewdesign\AuditSln\AuditClassLibrary\obj\Debug\ResolveAssemblyReference.cache
+G:\AuditNewdesign\AuditSln\AuditClassLibrary\obj\Debug\AuditClassLibrary.dll
+G:\AuditNewdesign\AuditSln\AuditClassLibrary\obj\Debug\AuditClassLibrary.pdb
+E:\AuditNew\21.05.2018FINAL\AuditFINAL\AuditSln\AuditClassLibrary\bin\Debug\AuditClassLibrary.dll
+E:\AuditNew\21.05.2018FINAL\AuditFINAL\AuditSln\AuditClassLibrary\bin\Debug\AuditClassLibrary.pdb
+E:\AuditNew\21.05.2018FINAL\AuditFINAL\AuditSln\AuditClassLibrary\obj\Debug\ResolveAssemblyReference.cache
+E:\AuditNew\21.05.2018FINAL\AuditFINAL\AuditSln\AuditClassLibrary\obj\Debug\AuditClassLibrary.dll
+E:\AuditNew\21.05.2018FINAL\AuditFINAL\AuditSln\AuditClassLibrary\obj\Debug\AuditClassLibrary.pdb
+E:\21.05.2018FINAL\AuditFINAL\AuditSln\AuditClassLibrary\bin\Debug\AuditClassLibrary.dll
+E:\21.05.2018FINAL\AuditFINAL\AuditSln\AuditClassLibrary\bin\Debug\AuditClassLibrary.pdb
+E:\21.05.2018FINAL\AuditFINAL\AuditSln\AuditClassLibrary\obj\Debug\ResolveAssemblyReference.cache
+E:\21.05.2018FINAL\AuditFINAL\AuditSln\AuditClassLibrary\obj\Debug\AuditClassLibrary.dll
+E:\21.05.2018FINAL\AuditFINAL\AuditSln\AuditClassLibrary\obj\Debug\AuditClassLibrary.pdb
+E:\IKM Software\AuditFINAL\AuditSln\AuditClassLibrary\bin\Debug\AuditClassLibrary.dll
+E:\IKM Software\AuditFINAL\AuditSln\AuditClassLibrary\bin\Debug\AuditClassLibrary.pdb
+E:\IKM Software\AuditFINAL\AuditSln\AuditClassLibrary\obj\Debug\ResolveAssemblyReference.cache
+E:\IKM Software\AuditFINAL\AuditSln\AuditClassLibrary\obj\Debug\AuditClassLibrary.dll
+E:\IKM Software\AuditFINAL\AuditSln\AuditClassLibrary\obj\Debug\AuditClassLibrary.pdb
+F:\AUDIT\AuditFINAL\AuditSln\AuditClassLibrary\bin\Debug\AuditClassLibrary.dll
+F:\AUDIT\AuditFINAL\AuditSln\AuditClassLibrary\bin\Debug\AuditClassLibrary.pdb
+F:\AUDIT\AuditFINAL\AuditSln\AuditClassLibrary\obj\Debug\ResolveAssemblyReference.cache
+F:\AUDIT\AuditFINAL\AuditSln\AuditClassLibrary\obj\Debug\AuditClassLibrary.dll
+F:\AUDIT\AuditFINAL\AuditSln\AuditClassLibrary\obj\Debug\AuditClassLibrary.pdb
+G:\Share(RAKHI)\AUDIT\Audit_Final_Integrated\AuditSln\AuditClassLibrary\bin\Release\AuditClassLibrary.dll
+G:\Share(RAKHI)\AUDIT\Audit_Final_Integrated\AuditSln\AuditClassLibrary\bin\Release\AuditClassLibrary.pdb
+G:\Share(RAKHI)\AUDIT\Audit_Final_Integrated\AuditSln\AuditClassLibrary\obj\Release\ResolveAssemblyReference.cache
+G:\Share(RAKHI)\AUDIT\Audit_Final_Integrated\AuditSln\AuditClassLibrary\obj\Release\AuditClassLibrary.dll
+G:\Share(RAKHI)\AUDIT\Audit_Final_Integrated\AuditSln\AuditClassLibrary\obj\Release\AuditClassLibrary.pdb
+G:\Share(RAKHI)\AUDIT\Audit_Final_Integrated\AuditSln\AuditClassLibrary\bin\Debug\AuditClassLibrary.dll
+G:\Share(RAKHI)\AUDIT\Audit_Final_Integrated\AuditSln\AuditClassLibrary\bin\Debug\AuditClassLibrary.pdb
+G:\Share(RAKHI)\AUDIT\Audit_Final_Integrated\AuditSln\AuditClassLibrary\obj\Debug\ResolveAssemblyReference.cache
+G:\Share(RAKHI)\AUDIT\Audit_Final_Integrated\AuditSln\AuditClassLibrary\obj\Debug\AuditClassLibrary.dll
+G:\Share(RAKHI)\AUDIT\Audit_Final_Integrated\AuditSln\AuditClassLibrary\obj\Debug\AuditClassLibrary.pdb
+E:\Rakhi.S\Audit_Final_Integrated\AuditSln\AuditClassLibrary\bin\Debug\AuditClassLibrary.dll
+E:\Rakhi.S\Audit_Final_Integrated\AuditSln\AuditClassLibrary\bin\Debug\AuditClassLibrary.pdb
+E:\Rakhi.S\Audit_Final_Integrated\AuditSln\AuditClassLibrary\obj\Debug\ResolveAssemblyReference.cache
+E:\Rakhi.S\Audit_Final_Integrated\AuditSln\AuditClassLibrary\obj\Debug\AuditClassLibrary.dll
+E:\Rakhi.S\Audit_Final_Integrated\AuditSln\AuditClassLibrary\obj\Debug\AuditClassLibrary.pdb

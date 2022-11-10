@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AuditProject/Pages/Default2.aspx" hash="fffffff1d8439188" filehash="ee4b4503bc6c62e" flags="110000" assembly="App_Web_mvj4bvob" type="ASP.pages_default2_aspx">
+    <filedeps>
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master" />
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master.cs" />
+        <filedep name="/AuditProject/Pages/Default2.aspx" />
+        <filedep name="/AuditProject/Pages/Default2.aspx.cs" />
+    </filedeps>
+</preserve>

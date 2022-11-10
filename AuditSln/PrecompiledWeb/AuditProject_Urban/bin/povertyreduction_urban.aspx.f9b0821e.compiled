@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AuditProject/Pages/PovertyReduction_Urban.aspx" hash="fffffff1d8439188" filehash="b30c76b4209f97a1" flags="110000" assembly="App_Web_cylkdayd" type="ASP.pages_povertyreduction_urban_aspx">
+    <filedeps>
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master" />
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master.cs" />
+        <filedep name="/AuditProject/Pages/PovertyReduction_Urban.aspx" />
+        <filedep name="/AuditProject/Pages/PovertyReduction_Urban.aspx.cs" />
+    </filedeps>
+</preserve>

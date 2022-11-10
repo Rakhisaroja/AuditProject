@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AuditProject/Pages/AuditMasterPageLogin.master" hash="fffffff1d8439188" filehash="9381882e7a7dcfd8" flags="110000" assembly="App_Web_gkwjikol" type="ASP.pages_auditmasterpagelogin_master">
+    <filedeps>
+        <filedep name="/AuditProject/Pages/AuditMasterPageLogin.master" />
+        <filedep name="/AuditProject/Pages/AuditMasterPageLogin.master.cs" />
+    </filedeps>
+</preserve>

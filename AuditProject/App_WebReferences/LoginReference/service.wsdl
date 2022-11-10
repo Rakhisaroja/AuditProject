@@ -1,0 +1,2697 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="CheckUserLogin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="suiteid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="applicationid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckUserLoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckUserLoginResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckUserDetailsALL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="intlbid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="suiteid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="applicationid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckUserDetailsALLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckUserDetailsALLResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckUserLoginphp">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="suiteid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="applicationid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckUserLoginphpResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckUserLoginphpResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="lbid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="suiteid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="applicationid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserDetailsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getUserDetailsgroup">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="suiteid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="applicationid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getUserDetailsgroupResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getUserDetailsgroupResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getApproverUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="lbid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="subject" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="suiteid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="applicationid" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="seatid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getApproverUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getApproverUserResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getApproverUserLB">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="lbid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="subject" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="suiteid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="applicationid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getApproverUserLBResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getApproverUserLBResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSeatDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="lbid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="suiteid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="applicationid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSeatDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getSeatDetailsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSeatUserDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="lbid" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="seatid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSeatUserDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getSeatUserDetailsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getLBDetailsSanchaya">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="numUnitID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="numUnitCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getLBDetailsSanchayaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getLBDetailsSanchayaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="savepasswordChange">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="numUserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldPwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="newPwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cinPwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="savepasswordChangeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="savepasswordChangeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSeatDetLBZonal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="intLBID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="numZoneID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="intSuiteID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="intApplicationID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="intRoleID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSeatDetLBZonalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getSeatDetLBZonalResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSeatDetLBZonalSuite">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="intLBID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="numZoneID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="intSuiteID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="intApplicationID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSeatDetLBZonalSuiteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getSeatDetLBZonalSuiteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSeatDetLBOfficeSuite">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="intLBID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="intSuiteID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="intApplicationID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="intImplOfficerTypeId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSeatDetLBOfficeSuiteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getSeatDetLBOfficeSuiteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSeatMember">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="intLBID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSeatMemberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getSeatMemberResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSeatMeetingClerk">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="intLBID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSeatMeetingClerkResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getSeatMeetingClerkResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getAllUserSeatLB">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="intLBID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="suiteid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="applicationid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getAllUserSeatLBResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getAllUserSeatLBResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getDepartmentdet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="intlLBTypeId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getDepartmentdetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getDepartmentdetResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getDepartmentdetseat">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="intLBID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="departmentid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getDepartmentdetseatResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getDepartmentdetseatResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getImplementingOfficerSankhya">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getImplementingOfficerSankhyaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getImplementingOfficerSankhyaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getOutDoorStaffList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="lbid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="zoneid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="suiteid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="applicationid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="roleid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getOutDoorStaffListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getOutDoorStaffListResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getFunddetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="projectid" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="yearid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getFunddetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getFunddetailsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMicrosector">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="projectid" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="yearid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMicrosectorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getMicrosectorResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getProjectDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="unitid" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="lbid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="yearid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getProjectDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getProjectDetailsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getProjectDetailsByid">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="decProjectID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="yearid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getProjectDetailsByidResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getProjectDetailsByidResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getAllUserSeatLBByUserType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="intLBID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="suiteid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="applicationid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="intDistrict" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="intUserType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getAllUserSeatLBByUserTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getAllUserSeatLBByUserTypeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSeatDetailsUnitcode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="unitcode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="suiteid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="applicationid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSeatDetailsUnitcodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getSeatDetailsUnitcodeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getDepartmentdetseatUnitcode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="unitcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="departmentid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getDepartmentdetseatUnitcodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getDepartmentdetseatUnitcodeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getAllUserSeatLBUnitcode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="unitcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="suiteid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="applicationid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getAllUserSeatLBUnitcodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getAllUserSeatLBUnitcodeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getAllUnitUnitcode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="unitcode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getAllUnitUnitcodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getAllUnitUnitcodeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getAllLBbyauditoffice">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getAllLBbyauditofficeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getAllLBbyauditofficeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CheckUserLoginSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckUserLogin" />
+  </wsdl:message>
+  <wsdl:message name="CheckUserLoginSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckUserLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckUserDetailsALLSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckUserDetailsALL" />
+  </wsdl:message>
+  <wsdl:message name="CheckUserDetailsALLSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckUserDetailsALLResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckUserLoginphpSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckUserLoginphp" />
+  </wsdl:message>
+  <wsdl:message name="CheckUserLoginphpSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckUserLoginphpResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetUserDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getUserDetailsgroupSoapIn">
+    <wsdl:part name="parameters" element="tns:getUserDetailsgroup" />
+  </wsdl:message>
+  <wsdl:message name="getUserDetailsgroupSoapOut">
+    <wsdl:part name="parameters" element="tns:getUserDetailsgroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="getApproverUserSoapIn">
+    <wsdl:part name="parameters" element="tns:getApproverUser" />
+  </wsdl:message>
+  <wsdl:message name="getApproverUserSoapOut">
+    <wsdl:part name="parameters" element="tns:getApproverUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="getApproverUserLBSoapIn">
+    <wsdl:part name="parameters" element="tns:getApproverUserLB" />
+  </wsdl:message>
+  <wsdl:message name="getApproverUserLBSoapOut">
+    <wsdl:part name="parameters" element="tns:getApproverUserLBResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSeatDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:getSeatDetails" />
+  </wsdl:message>
+  <wsdl:message name="getSeatDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:getSeatDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSeatUserDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:getSeatUserDetails" />
+  </wsdl:message>
+  <wsdl:message name="getSeatUserDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:getSeatUserDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getLBDetailsSanchayaSoapIn">
+    <wsdl:part name="parameters" element="tns:getLBDetailsSanchaya" />
+  </wsdl:message>
+  <wsdl:message name="getLBDetailsSanchayaSoapOut">
+    <wsdl:part name="parameters" element="tns:getLBDetailsSanchayaResponse" />
+  </wsdl:message>
+  <wsdl:message name="savepasswordChangeSoapIn">
+    <wsdl:part name="parameters" element="tns:savepasswordChange" />
+  </wsdl:message>
+  <wsdl:message name="savepasswordChangeSoapOut">
+    <wsdl:part name="parameters" element="tns:savepasswordChangeResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSeatDetLBZonalSoapIn">
+    <wsdl:part name="parameters" element="tns:getSeatDetLBZonal" />
+  </wsdl:message>
+  <wsdl:message name="getSeatDetLBZonalSoapOut">
+    <wsdl:part name="parameters" element="tns:getSeatDetLBZonalResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSeatDetLBZonalSuiteSoapIn">
+    <wsdl:part name="parameters" element="tns:getSeatDetLBZonalSuite" />
+  </wsdl:message>
+  <wsdl:message name="getSeatDetLBZonalSuiteSoapOut">
+    <wsdl:part name="parameters" element="tns:getSeatDetLBZonalSuiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSeatDetLBOfficeSuiteSoapIn">
+    <wsdl:part name="parameters" element="tns:getSeatDetLBOfficeSuite" />
+  </wsdl:message>
+  <wsdl:message name="getSeatDetLBOfficeSuiteSoapOut">
+    <wsdl:part name="parameters" element="tns:getSeatDetLBOfficeSuiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSeatMemberSoapIn">
+    <wsdl:part name="parameters" element="tns:getSeatMember" />
+  </wsdl:message>
+  <wsdl:message name="getSeatMemberSoapOut">
+    <wsdl:part name="parameters" element="tns:getSeatMemberResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSeatMeetingClerkSoapIn">
+    <wsdl:part name="parameters" element="tns:getSeatMeetingClerk" />
+  </wsdl:message>
+  <wsdl:message name="getSeatMeetingClerkSoapOut">
+    <wsdl:part name="parameters" element="tns:getSeatMeetingClerkResponse" />
+  </wsdl:message>
+  <wsdl:message name="getAllUserSeatLBSoapIn">
+    <wsdl:part name="parameters" element="tns:getAllUserSeatLB" />
+  </wsdl:message>
+  <wsdl:message name="getAllUserSeatLBSoapOut">
+    <wsdl:part name="parameters" element="tns:getAllUserSeatLBResponse" />
+  </wsdl:message>
+  <wsdl:message name="getDepartmentdetSoapIn">
+    <wsdl:part name="parameters" element="tns:getDepartmentdet" />
+  </wsdl:message>
+  <wsdl:message name="getDepartmentdetSoapOut">
+    <wsdl:part name="parameters" element="tns:getDepartmentdetResponse" />
+  </wsdl:message>
+  <wsdl:message name="getDepartmentdetseatSoapIn">
+    <wsdl:part name="parameters" element="tns:getDepartmentdetseat" />
+  </wsdl:message>
+  <wsdl:message name="getDepartmentdetseatSoapOut">
+    <wsdl:part name="parameters" element="tns:getDepartmentdetseatResponse" />
+  </wsdl:message>
+  <wsdl:message name="getImplementingOfficerSankhyaSoapIn">
+    <wsdl:part name="parameters" element="tns:getImplementingOfficerSankhya" />
+  </wsdl:message>
+  <wsdl:message name="getImplementingOfficerSankhyaSoapOut">
+    <wsdl:part name="parameters" element="tns:getImplementingOfficerSankhyaResponse" />
+  </wsdl:message>
+  <wsdl:message name="getOutDoorStaffListSoapIn">
+    <wsdl:part name="parameters" element="tns:getOutDoorStaffList" />
+  </wsdl:message>
+  <wsdl:message name="getOutDoorStaffListSoapOut">
+    <wsdl:part name="parameters" element="tns:getOutDoorStaffListResponse" />
+  </wsdl:message>
+  <wsdl:message name="getFunddetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:getFunddetails" />
+  </wsdl:message>
+  <wsdl:message name="getFunddetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:getFunddetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getMicrosectorSoapIn">
+    <wsdl:part name="parameters" element="tns:getMicrosector" />
+  </wsdl:message>
+  <wsdl:message name="getMicrosectorSoapOut">
+    <wsdl:part name="parameters" element="tns:getMicrosectorResponse" />
+  </wsdl:message>
+  <wsdl:message name="getProjectDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:getProjectDetails" />
+  </wsdl:message>
+  <wsdl:message name="getProjectDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:getProjectDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getProjectDetailsByidSoapIn">
+    <wsdl:part name="parameters" element="tns:getProjectDetailsByid" />
+  </wsdl:message>
+  <wsdl:message name="getProjectDetailsByidSoapOut">
+    <wsdl:part name="parameters" element="tns:getProjectDetailsByidResponse" />
+  </wsdl:message>
+  <wsdl:message name="getAllUserSeatLBByUserTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:getAllUserSeatLBByUserType" />
+  </wsdl:message>
+  <wsdl:message name="getAllUserSeatLBByUserTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:getAllUserSeatLBByUserTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSeatDetailsUnitcodeSoapIn">
+    <wsdl:part name="parameters" element="tns:getSeatDetailsUnitcode" />
+  </wsdl:message>
+  <wsdl:message name="getSeatDetailsUnitcodeSoapOut">
+    <wsdl:part name="parameters" element="tns:getSeatDetailsUnitcodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="getDepartmentdetseatUnitcodeSoapIn">
+    <wsdl:part name="parameters" element="tns:getDepartmentdetseatUnitcode" />
+  </wsdl:message>
+  <wsdl:message name="getDepartmentdetseatUnitcodeSoapOut">
+    <wsdl:part name="parameters" element="tns:getDepartmentdetseatUnitcodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="getAllUserSeatLBUnitcodeSoapIn">
+    <wsdl:part name="parameters" element="tns:getAllUserSeatLBUnitcode" />
+  </wsdl:message>
+  <wsdl:message name="getAllUserSeatLBUnitcodeSoapOut">
+    <wsdl:part name="parameters" element="tns:getAllUserSeatLBUnitcodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="getAllUnitUnitcodeSoapIn">
+    <wsdl:part name="parameters" element="tns:getAllUnitUnitcode" />
+  </wsdl:message>
+  <wsdl:message name="getAllUnitUnitcodeSoapOut">
+    <wsdl:part name="parameters" element="tns:getAllUnitUnitcodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="getAllLBbyauditofficeSoapIn">
+    <wsdl:part name="parameters" element="tns:getAllLBbyauditoffice" />
+  </wsdl:message>
+  <wsdl:message name="getAllLBbyauditofficeSoapOut">
+    <wsdl:part name="parameters" element="tns:getAllLBbyauditofficeResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckUserLoginHttpGetIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="suiteid" type="s:string" />
+    <wsdl:part name="applicationid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckUserLoginHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckUserDetailsALLHttpGetIn">
+    <wsdl:part name="intlbid" type="s:string" />
+    <wsdl:part name="suiteid" type="s:string" />
+    <wsdl:part name="applicationid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckUserDetailsALLHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckUserLoginphpHttpGetIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="suiteid" type="s:string" />
+    <wsdl:part name="applicationid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckUserLoginphpHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUserDetailsHttpGetIn">
+    <wsdl:part name="lbid" type="s:string" />
+    <wsdl:part name="suiteid" type="s:string" />
+    <wsdl:part name="applicationid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUserDetailsHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getUserDetailsgroupHttpGetIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="suiteid" type="s:string" />
+    <wsdl:part name="applicationid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getUserDetailsgroupHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getApproverUserHttpGetIn">
+    <wsdl:part name="lbid" type="s:string" />
+    <wsdl:part name="subject" type="s:string" />
+    <wsdl:part name="suiteid" type="s:string" />
+    <wsdl:part name="applicationid" type="s:string" />
+    <wsdl:part name="seatid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getApproverUserHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getApproverUserLBHttpGetIn">
+    <wsdl:part name="lbid" type="s:string" />
+    <wsdl:part name="subject" type="s:string" />
+    <wsdl:part name="suiteid" type="s:string" />
+    <wsdl:part name="applicationid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getApproverUserLBHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getSeatDetailsHttpGetIn">
+    <wsdl:part name="lbid" type="s:string" />
+    <wsdl:part name="suiteid" type="s:string" />
+    <wsdl:part name="applicationid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getSeatDetailsHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getSeatUserDetailsHttpGetIn">
+    <wsdl:part name="lbid" type="s:string" />
+    <wsdl:part name="seatid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getSeatUserDetailsHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getLBDetailsSanchayaHttpGetIn">
+    <wsdl:part name="numUnitID" type="s:string" />
+    <wsdl:part name="numUnitCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getLBDetailsSanchayaHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="savepasswordChangeHttpGetIn">
+    <wsdl:part name="numUserID" type="s:string" />
+    <wsdl:part name="oldPwd" type="s:string" />
+    <wsdl:part name="newPwd" type="s:string" />
+    <wsdl:part name="cinPwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="savepasswordChangeHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getSeatDetLBZonalHttpGetIn">
+    <wsdl:part name="intLBID" type="s:string" />
+    <wsdl:part name="numZoneID" type="s:string" />
+    <wsdl:part name="intSuiteID" type="s:string" />
+    <wsdl:part name="intApplicationID" type="s:string" />
+    <wsdl:part name="intRoleID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getSeatDetLBZonalHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getSeatDetLBZonalSuiteHttpGetIn">
+    <wsdl:part name="intLBID" type="s:string" />
+    <wsdl:part name="numZoneID" type="s:string" />
+    <wsdl:part name="intSuiteID" type="s:string" />
+    <wsdl:part name="intApplicationID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getSeatDetLBZonalSuiteHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getSeatDetLBOfficeSuiteHttpGetIn">
+    <wsdl:part name="intLBID" type="s:string" />
+    <wsdl:part name="intSuiteID" type="s:string" />
+    <wsdl:part name="intApplicationID" type="s:string" />
+    <wsdl:part name="intImplOfficerTypeId" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getSeatDetLBOfficeSuiteHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getSeatMemberHttpGetIn">
+    <wsdl:part name="intLBID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getSeatMemberHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getSeatMeetingClerkHttpGetIn">
+    <wsdl:part name="intLBID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getSeatMeetingClerkHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getAllUserSeatLBHttpGetIn">
+    <wsdl:part name="intLBID" type="s:string" />
+    <wsdl:part name="suiteid" type="s:string" />
+    <wsdl:part name="applicationid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getAllUserSeatLBHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getDepartmentdetHttpGetIn">
+    <wsdl:part name="intlLBTypeId" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getDepartmentdetHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getDepartmentdetseatHttpGetIn">
+    <wsdl:part name="intLBID" type="s:string" />
+    <wsdl:part name="departmentid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getDepartmentdetseatHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getImplementingOfficerSankhyaHttpGetIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getImplementingOfficerSankhyaHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getOutDoorStaffListHttpGetIn">
+    <wsdl:part name="lbid" type="s:string" />
+    <wsdl:part name="zoneid" type="s:string" />
+    <wsdl:part name="suiteid" type="s:string" />
+    <wsdl:part name="applicationid" type="s:string" />
+    <wsdl:part name="roleid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getOutDoorStaffListHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getFunddetailsHttpGetIn">
+    <wsdl:part name="projectid" type="s:string" />
+    <wsdl:part name="yearid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getFunddetailsHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getMicrosectorHttpGetIn">
+    <wsdl:part name="projectid" type="s:string" />
+    <wsdl:part name="yearid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getMicrosectorHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getProjectDetailsHttpGetIn">
+    <wsdl:part name="unitid" type="s:string" />
+    <wsdl:part name="lbid" type="s:string" />
+    <wsdl:part name="yearid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getProjectDetailsHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getProjectDetailsByidHttpGetIn">
+    <wsdl:part name="decProjectID" type="s:string" />
+    <wsdl:part name="yearid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getProjectDetailsByidHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getAllUserSeatLBByUserTypeHttpGetIn">
+    <wsdl:part name="intLBID" type="s:string" />
+    <wsdl:part name="suiteid" type="s:string" />
+    <wsdl:part name="applicationid" type="s:string" />
+    <wsdl:part name="intDistrict" type="s:string" />
+    <wsdl:part name="intUserType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getAllUserSeatLBByUserTypeHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getSeatDetailsUnitcodeHttpGetIn">
+    <wsdl:part name="unitcode" type="s:string" />
+    <wsdl:part name="suiteid" type="s:string" />
+    <wsdl:part name="applicationid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getSeatDetailsUnitcodeHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getDepartmentdetseatUnitcodeHttpGetIn">
+    <wsdl:part name="unitcode" type="s:string" />
+    <wsdl:part name="departmentid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getDepartmentdetseatUnitcodeHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getAllUserSeatLBUnitcodeHttpGetIn">
+    <wsdl:part name="unitcode" type="s:string" />
+    <wsdl:part name="suiteid" type="s:string" />
+    <wsdl:part name="applicationid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getAllUserSeatLBUnitcodeHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getAllUnitUnitcodeHttpGetIn">
+    <wsdl:part name="unitcode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getAllUnitUnitcodeHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getAllLBbyauditofficeHttpGetIn">
+    <wsdl:part name="userid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getAllLBbyauditofficeHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckUserLoginHttpPostIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="suiteid" type="s:string" />
+    <wsdl:part name="applicationid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckUserLoginHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckUserDetailsALLHttpPostIn">
+    <wsdl:part name="intlbid" type="s:string" />
+    <wsdl:part name="suiteid" type="s:string" />
+    <wsdl:part name="applicationid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckUserDetailsALLHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckUserLoginphpHttpPostIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="suiteid" type="s:string" />
+    <wsdl:part name="applicationid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckUserLoginphpHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUserDetailsHttpPostIn">
+    <wsdl:part name="lbid" type="s:string" />
+    <wsdl:part name="suiteid" type="s:string" />
+    <wsdl:part name="applicationid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUserDetailsHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getUserDetailsgroupHttpPostIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="suiteid" type="s:string" />
+    <wsdl:part name="applicationid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getUserDetailsgroupHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getApproverUserHttpPostIn">
+    <wsdl:part name="lbid" type="s:string" />
+    <wsdl:part name="subject" type="s:string" />
+    <wsdl:part name="suiteid" type="s:string" />
+    <wsdl:part name="applicationid" type="s:string" />
+    <wsdl:part name="seatid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getApproverUserHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getApproverUserLBHttpPostIn">
+    <wsdl:part name="lbid" type="s:string" />
+    <wsdl:part name="subject" type="s:string" />
+    <wsdl:part name="suiteid" type="s:string" />
+    <wsdl:part name="applicationid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getApproverUserLBHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getSeatDetailsHttpPostIn">
+    <wsdl:part name="lbid" type="s:string" />
+    <wsdl:part name="suiteid" type="s:string" />
+    <wsdl:part name="applicationid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getSeatDetailsHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getSeatUserDetailsHttpPostIn">
+    <wsdl:part name="lbid" type="s:string" />
+    <wsdl:part name="seatid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getSeatUserDetailsHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getLBDetailsSanchayaHttpPostIn">
+    <wsdl:part name="numUnitID" type="s:string" />
+    <wsdl:part name="numUnitCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getLBDetailsSanchayaHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="savepasswordChangeHttpPostIn">
+    <wsdl:part name="numUserID" type="s:string" />
+    <wsdl:part name="oldPwd" type="s:string" />
+    <wsdl:part name="newPwd" type="s:string" />
+    <wsdl:part name="cinPwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="savepasswordChangeHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getSeatDetLBZonalHttpPostIn">
+    <wsdl:part name="intLBID" type="s:string" />
+    <wsdl:part name="numZoneID" type="s:string" />
+    <wsdl:part name="intSuiteID" type="s:string" />
+    <wsdl:part name="intApplicationID" type="s:string" />
+    <wsdl:part name="intRoleID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getSeatDetLBZonalHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getSeatDetLBZonalSuiteHttpPostIn">
+    <wsdl:part name="intLBID" type="s:string" />
+    <wsdl:part name="numZoneID" type="s:string" />
+    <wsdl:part name="intSuiteID" type="s:string" />
+    <wsdl:part name="intApplicationID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getSeatDetLBZonalSuiteHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getSeatDetLBOfficeSuiteHttpPostIn">
+    <wsdl:part name="intLBID" type="s:string" />
+    <wsdl:part name="intSuiteID" type="s:string" />
+    <wsdl:part name="intApplicationID" type="s:string" />
+    <wsdl:part name="intImplOfficerTypeId" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getSeatDetLBOfficeSuiteHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getSeatMemberHttpPostIn">
+    <wsdl:part name="intLBID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getSeatMemberHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getSeatMeetingClerkHttpPostIn">
+    <wsdl:part name="intLBID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getSeatMeetingClerkHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getAllUserSeatLBHttpPostIn">
+    <wsdl:part name="intLBID" type="s:string" />
+    <wsdl:part name="suiteid" type="s:string" />
+    <wsdl:part name="applicationid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getAllUserSeatLBHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getDepartmentdetHttpPostIn">
+    <wsdl:part name="intlLBTypeId" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getDepartmentdetHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getDepartmentdetseatHttpPostIn">
+    <wsdl:part name="intLBID" type="s:string" />
+    <wsdl:part name="departmentid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getDepartmentdetseatHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getImplementingOfficerSankhyaHttpPostIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getImplementingOfficerSankhyaHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getOutDoorStaffListHttpPostIn">
+    <wsdl:part name="lbid" type="s:string" />
+    <wsdl:part name="zoneid" type="s:string" />
+    <wsdl:part name="suiteid" type="s:string" />
+    <wsdl:part name="applicationid" type="s:string" />
+    <wsdl:part name="roleid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getOutDoorStaffListHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getFunddetailsHttpPostIn">
+    <wsdl:part name="projectid" type="s:string" />
+    <wsdl:part name="yearid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getFunddetailsHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getMicrosectorHttpPostIn">
+    <wsdl:part name="projectid" type="s:string" />
+    <wsdl:part name="yearid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getMicrosectorHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getProjectDetailsHttpPostIn">
+    <wsdl:part name="unitid" type="s:string" />
+    <wsdl:part name="lbid" type="s:string" />
+    <wsdl:part name="yearid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getProjectDetailsHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getProjectDetailsByidHttpPostIn">
+    <wsdl:part name="decProjectID" type="s:string" />
+    <wsdl:part name="yearid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getProjectDetailsByidHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getAllUserSeatLBByUserTypeHttpPostIn">
+    <wsdl:part name="intLBID" type="s:string" />
+    <wsdl:part name="suiteid" type="s:string" />
+    <wsdl:part name="applicationid" type="s:string" />
+    <wsdl:part name="intDistrict" type="s:string" />
+    <wsdl:part name="intUserType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getAllUserSeatLBByUserTypeHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getSeatDetailsUnitcodeHttpPostIn">
+    <wsdl:part name="unitcode" type="s:string" />
+    <wsdl:part name="suiteid" type="s:string" />
+    <wsdl:part name="applicationid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getSeatDetailsUnitcodeHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getDepartmentdetseatUnitcodeHttpPostIn">
+    <wsdl:part name="unitcode" type="s:string" />
+    <wsdl:part name="departmentid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getDepartmentdetseatUnitcodeHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getAllUserSeatLBUnitcodeHttpPostIn">
+    <wsdl:part name="unitcode" type="s:string" />
+    <wsdl:part name="suiteid" type="s:string" />
+    <wsdl:part name="applicationid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getAllUserSeatLBUnitcodeHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getAllUnitUnitcodeHttpPostIn">
+    <wsdl:part name="unitcode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getAllUnitUnitcodeHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getAllLBbyauditofficeHttpPostIn">
+    <wsdl:part name="userid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getAllLBbyauditofficeHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="CheckUserLogin">
+      <wsdl:input message="tns:CheckUserLoginSoapIn" />
+      <wsdl:output message="tns:CheckUserLoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserDetailsALL">
+      <wsdl:input message="tns:CheckUserDetailsALLSoapIn" />
+      <wsdl:output message="tns:CheckUserDetailsALLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserLoginphp">
+      <wsdl:input message="tns:CheckUserLoginphpSoapIn" />
+      <wsdl:output message="tns:CheckUserLoginphpSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDetails">
+      <wsdl:input message="tns:GetUserDetailsSoapIn" />
+      <wsdl:output message="tns:GetUserDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getUserDetailsgroup">
+      <wsdl:input message="tns:getUserDetailsgroupSoapIn" />
+      <wsdl:output message="tns:getUserDetailsgroupSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getApproverUser">
+      <wsdl:input message="tns:getApproverUserSoapIn" />
+      <wsdl:output message="tns:getApproverUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getApproverUserLB">
+      <wsdl:input message="tns:getApproverUserLBSoapIn" />
+      <wsdl:output message="tns:getApproverUserLBSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSeatDetails">
+      <wsdl:input message="tns:getSeatDetailsSoapIn" />
+      <wsdl:output message="tns:getSeatDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSeatUserDetails">
+      <wsdl:input message="tns:getSeatUserDetailsSoapIn" />
+      <wsdl:output message="tns:getSeatUserDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getLBDetailsSanchaya">
+      <wsdl:input message="tns:getLBDetailsSanchayaSoapIn" />
+      <wsdl:output message="tns:getLBDetailsSanchayaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="savepasswordChange">
+      <wsdl:input message="tns:savepasswordChangeSoapIn" />
+      <wsdl:output message="tns:savepasswordChangeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSeatDetLBZonal">
+      <wsdl:input message="tns:getSeatDetLBZonalSoapIn" />
+      <wsdl:output message="tns:getSeatDetLBZonalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSeatDetLBZonalSuite">
+      <wsdl:input message="tns:getSeatDetLBZonalSuiteSoapIn" />
+      <wsdl:output message="tns:getSeatDetLBZonalSuiteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSeatDetLBOfficeSuite">
+      <wsdl:input message="tns:getSeatDetLBOfficeSuiteSoapIn" />
+      <wsdl:output message="tns:getSeatDetLBOfficeSuiteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSeatMember">
+      <wsdl:input message="tns:getSeatMemberSoapIn" />
+      <wsdl:output message="tns:getSeatMemberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSeatMeetingClerk">
+      <wsdl:input message="tns:getSeatMeetingClerkSoapIn" />
+      <wsdl:output message="tns:getSeatMeetingClerkSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllUserSeatLB">
+      <wsdl:input message="tns:getAllUserSeatLBSoapIn" />
+      <wsdl:output message="tns:getAllUserSeatLBSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getDepartmentdet">
+      <wsdl:input message="tns:getDepartmentdetSoapIn" />
+      <wsdl:output message="tns:getDepartmentdetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getDepartmentdetseat">
+      <wsdl:input message="tns:getDepartmentdetseatSoapIn" />
+      <wsdl:output message="tns:getDepartmentdetseatSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getImplementingOfficerSankhya">
+      <wsdl:input message="tns:getImplementingOfficerSankhyaSoapIn" />
+      <wsdl:output message="tns:getImplementingOfficerSankhyaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getOutDoorStaffList">
+      <wsdl:input message="tns:getOutDoorStaffListSoapIn" />
+      <wsdl:output message="tns:getOutDoorStaffListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getFunddetails">
+      <wsdl:input message="tns:getFunddetailsSoapIn" />
+      <wsdl:output message="tns:getFunddetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getMicrosector">
+      <wsdl:input message="tns:getMicrosectorSoapIn" />
+      <wsdl:output message="tns:getMicrosectorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getProjectDetails">
+      <wsdl:input message="tns:getProjectDetailsSoapIn" />
+      <wsdl:output message="tns:getProjectDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getProjectDetailsByid">
+      <wsdl:input message="tns:getProjectDetailsByidSoapIn" />
+      <wsdl:output message="tns:getProjectDetailsByidSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllUserSeatLBByUserType">
+      <wsdl:input message="tns:getAllUserSeatLBByUserTypeSoapIn" />
+      <wsdl:output message="tns:getAllUserSeatLBByUserTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSeatDetailsUnitcode">
+      <wsdl:input message="tns:getSeatDetailsUnitcodeSoapIn" />
+      <wsdl:output message="tns:getSeatDetailsUnitcodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getDepartmentdetseatUnitcode">
+      <wsdl:input message="tns:getDepartmentdetseatUnitcodeSoapIn" />
+      <wsdl:output message="tns:getDepartmentdetseatUnitcodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllUserSeatLBUnitcode">
+      <wsdl:input message="tns:getAllUserSeatLBUnitcodeSoapIn" />
+      <wsdl:output message="tns:getAllUserSeatLBUnitcodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllUnitUnitcode">
+      <wsdl:input message="tns:getAllUnitUnitcodeSoapIn" />
+      <wsdl:output message="tns:getAllUnitUnitcodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllLBbyauditoffice">
+      <wsdl:input message="tns:getAllLBbyauditofficeSoapIn" />
+      <wsdl:output message="tns:getAllLBbyauditofficeSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ServiceHttpGet">
+    <wsdl:operation name="CheckUserLogin">
+      <wsdl:input message="tns:CheckUserLoginHttpGetIn" />
+      <wsdl:output message="tns:CheckUserLoginHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserDetailsALL">
+      <wsdl:input message="tns:CheckUserDetailsALLHttpGetIn" />
+      <wsdl:output message="tns:CheckUserDetailsALLHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserLoginphp">
+      <wsdl:input message="tns:CheckUserLoginphpHttpGetIn" />
+      <wsdl:output message="tns:CheckUserLoginphpHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDetails">
+      <wsdl:input message="tns:GetUserDetailsHttpGetIn" />
+      <wsdl:output message="tns:GetUserDetailsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getUserDetailsgroup">
+      <wsdl:input message="tns:getUserDetailsgroupHttpGetIn" />
+      <wsdl:output message="tns:getUserDetailsgroupHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getApproverUser">
+      <wsdl:input message="tns:getApproverUserHttpGetIn" />
+      <wsdl:output message="tns:getApproverUserHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getApproverUserLB">
+      <wsdl:input message="tns:getApproverUserLBHttpGetIn" />
+      <wsdl:output message="tns:getApproverUserLBHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSeatDetails">
+      <wsdl:input message="tns:getSeatDetailsHttpGetIn" />
+      <wsdl:output message="tns:getSeatDetailsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSeatUserDetails">
+      <wsdl:input message="tns:getSeatUserDetailsHttpGetIn" />
+      <wsdl:output message="tns:getSeatUserDetailsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getLBDetailsSanchaya">
+      <wsdl:input message="tns:getLBDetailsSanchayaHttpGetIn" />
+      <wsdl:output message="tns:getLBDetailsSanchayaHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="savepasswordChange">
+      <wsdl:input message="tns:savepasswordChangeHttpGetIn" />
+      <wsdl:output message="tns:savepasswordChangeHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSeatDetLBZonal">
+      <wsdl:input message="tns:getSeatDetLBZonalHttpGetIn" />
+      <wsdl:output message="tns:getSeatDetLBZonalHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSeatDetLBZonalSuite">
+      <wsdl:input message="tns:getSeatDetLBZonalSuiteHttpGetIn" />
+      <wsdl:output message="tns:getSeatDetLBZonalSuiteHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSeatDetLBOfficeSuite">
+      <wsdl:input message="tns:getSeatDetLBOfficeSuiteHttpGetIn" />
+      <wsdl:output message="tns:getSeatDetLBOfficeSuiteHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSeatMember">
+      <wsdl:input message="tns:getSeatMemberHttpGetIn" />
+      <wsdl:output message="tns:getSeatMemberHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSeatMeetingClerk">
+      <wsdl:input message="tns:getSeatMeetingClerkHttpGetIn" />
+      <wsdl:output message="tns:getSeatMeetingClerkHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllUserSeatLB">
+      <wsdl:input message="tns:getAllUserSeatLBHttpGetIn" />
+      <wsdl:output message="tns:getAllUserSeatLBHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getDepartmentdet">
+      <wsdl:input message="tns:getDepartmentdetHttpGetIn" />
+      <wsdl:output message="tns:getDepartmentdetHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getDepartmentdetseat">
+      <wsdl:input message="tns:getDepartmentdetseatHttpGetIn" />
+      <wsdl:output message="tns:getDepartmentdetseatHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getImplementingOfficerSankhya">
+      <wsdl:input message="tns:getImplementingOfficerSankhyaHttpGetIn" />
+      <wsdl:output message="tns:getImplementingOfficerSankhyaHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getOutDoorStaffList">
+      <wsdl:input message="tns:getOutDoorStaffListHttpGetIn" />
+      <wsdl:output message="tns:getOutDoorStaffListHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getFunddetails">
+      <wsdl:input message="tns:getFunddetailsHttpGetIn" />
+      <wsdl:output message="tns:getFunddetailsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getMicrosector">
+      <wsdl:input message="tns:getMicrosectorHttpGetIn" />
+      <wsdl:output message="tns:getMicrosectorHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getProjectDetails">
+      <wsdl:input message="tns:getProjectDetailsHttpGetIn" />
+      <wsdl:output message="tns:getProjectDetailsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getProjectDetailsByid">
+      <wsdl:input message="tns:getProjectDetailsByidHttpGetIn" />
+      <wsdl:output message="tns:getProjectDetailsByidHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllUserSeatLBByUserType">
+      <wsdl:input message="tns:getAllUserSeatLBByUserTypeHttpGetIn" />
+      <wsdl:output message="tns:getAllUserSeatLBByUserTypeHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSeatDetailsUnitcode">
+      <wsdl:input message="tns:getSeatDetailsUnitcodeHttpGetIn" />
+      <wsdl:output message="tns:getSeatDetailsUnitcodeHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getDepartmentdetseatUnitcode">
+      <wsdl:input message="tns:getDepartmentdetseatUnitcodeHttpGetIn" />
+      <wsdl:output message="tns:getDepartmentdetseatUnitcodeHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllUserSeatLBUnitcode">
+      <wsdl:input message="tns:getAllUserSeatLBUnitcodeHttpGetIn" />
+      <wsdl:output message="tns:getAllUserSeatLBUnitcodeHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllUnitUnitcode">
+      <wsdl:input message="tns:getAllUnitUnitcodeHttpGetIn" />
+      <wsdl:output message="tns:getAllUnitUnitcodeHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllLBbyauditoffice">
+      <wsdl:input message="tns:getAllLBbyauditofficeHttpGetIn" />
+      <wsdl:output message="tns:getAllLBbyauditofficeHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ServiceHttpPost">
+    <wsdl:operation name="CheckUserLogin">
+      <wsdl:input message="tns:CheckUserLoginHttpPostIn" />
+      <wsdl:output message="tns:CheckUserLoginHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserDetailsALL">
+      <wsdl:input message="tns:CheckUserDetailsALLHttpPostIn" />
+      <wsdl:output message="tns:CheckUserDetailsALLHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserLoginphp">
+      <wsdl:input message="tns:CheckUserLoginphpHttpPostIn" />
+      <wsdl:output message="tns:CheckUserLoginphpHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDetails">
+      <wsdl:input message="tns:GetUserDetailsHttpPostIn" />
+      <wsdl:output message="tns:GetUserDetailsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getUserDetailsgroup">
+      <wsdl:input message="tns:getUserDetailsgroupHttpPostIn" />
+      <wsdl:output message="tns:getUserDetailsgroupHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getApproverUser">
+      <wsdl:input message="tns:getApproverUserHttpPostIn" />
+      <wsdl:output message="tns:getApproverUserHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getApproverUserLB">
+      <wsdl:input message="tns:getApproverUserLBHttpPostIn" />
+      <wsdl:output message="tns:getApproverUserLBHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSeatDetails">
+      <wsdl:input message="tns:getSeatDetailsHttpPostIn" />
+      <wsdl:output message="tns:getSeatDetailsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSeatUserDetails">
+      <wsdl:input message="tns:getSeatUserDetailsHttpPostIn" />
+      <wsdl:output message="tns:getSeatUserDetailsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getLBDetailsSanchaya">
+      <wsdl:input message="tns:getLBDetailsSanchayaHttpPostIn" />
+      <wsdl:output message="tns:getLBDetailsSanchayaHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="savepasswordChange">
+      <wsdl:input message="tns:savepasswordChangeHttpPostIn" />
+      <wsdl:output message="tns:savepasswordChangeHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSeatDetLBZonal">
+      <wsdl:input message="tns:getSeatDetLBZonalHttpPostIn" />
+      <wsdl:output message="tns:getSeatDetLBZonalHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSeatDetLBZonalSuite">
+      <wsdl:input message="tns:getSeatDetLBZonalSuiteHttpPostIn" />
+      <wsdl:output message="tns:getSeatDetLBZonalSuiteHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSeatDetLBOfficeSuite">
+      <wsdl:input message="tns:getSeatDetLBOfficeSuiteHttpPostIn" />
+      <wsdl:output message="tns:getSeatDetLBOfficeSuiteHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSeatMember">
+      <wsdl:input message="tns:getSeatMemberHttpPostIn" />
+      <wsdl:output message="tns:getSeatMemberHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSeatMeetingClerk">
+      <wsdl:input message="tns:getSeatMeetingClerkHttpPostIn" />
+      <wsdl:output message="tns:getSeatMeetingClerkHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllUserSeatLB">
+      <wsdl:input message="tns:getAllUserSeatLBHttpPostIn" />
+      <wsdl:output message="tns:getAllUserSeatLBHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getDepartmentdet">
+      <wsdl:input message="tns:getDepartmentdetHttpPostIn" />
+      <wsdl:output message="tns:getDepartmentdetHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getDepartmentdetseat">
+      <wsdl:input message="tns:getDepartmentdetseatHttpPostIn" />
+      <wsdl:output message="tns:getDepartmentdetseatHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getImplementingOfficerSankhya">
+      <wsdl:input message="tns:getImplementingOfficerSankhyaHttpPostIn" />
+      <wsdl:output message="tns:getImplementingOfficerSankhyaHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getOutDoorStaffList">
+      <wsdl:input message="tns:getOutDoorStaffListHttpPostIn" />
+      <wsdl:output message="tns:getOutDoorStaffListHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getFunddetails">
+      <wsdl:input message="tns:getFunddetailsHttpPostIn" />
+      <wsdl:output message="tns:getFunddetailsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getMicrosector">
+      <wsdl:input message="tns:getMicrosectorHttpPostIn" />
+      <wsdl:output message="tns:getMicrosectorHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getProjectDetails">
+      <wsdl:input message="tns:getProjectDetailsHttpPostIn" />
+      <wsdl:output message="tns:getProjectDetailsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getProjectDetailsByid">
+      <wsdl:input message="tns:getProjectDetailsByidHttpPostIn" />
+      <wsdl:output message="tns:getProjectDetailsByidHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllUserSeatLBByUserType">
+      <wsdl:input message="tns:getAllUserSeatLBByUserTypeHttpPostIn" />
+      <wsdl:output message="tns:getAllUserSeatLBByUserTypeHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSeatDetailsUnitcode">
+      <wsdl:input message="tns:getSeatDetailsUnitcodeHttpPostIn" />
+      <wsdl:output message="tns:getSeatDetailsUnitcodeHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getDepartmentdetseatUnitcode">
+      <wsdl:input message="tns:getDepartmentdetseatUnitcodeHttpPostIn" />
+      <wsdl:output message="tns:getDepartmentdetseatUnitcodeHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllUserSeatLBUnitcode">
+      <wsdl:input message="tns:getAllUserSeatLBUnitcodeHttpPostIn" />
+      <wsdl:output message="tns:getAllUserSeatLBUnitcodeHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllUnitUnitcode">
+      <wsdl:input message="tns:getAllUnitUnitcodeHttpPostIn" />
+      <wsdl:output message="tns:getAllUnitUnitcodeHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllLBbyauditoffice">
+      <wsdl:input message="tns:getAllLBbyauditofficeHttpPostIn" />
+      <wsdl:output message="tns:getAllLBbyauditofficeHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CheckUserLogin">
+      <soap:operation soapAction="http://tempuri.org/CheckUserLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserDetailsALL">
+      <soap:operation soapAction="http://tempuri.org/CheckUserDetailsALL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserLoginphp">
+      <soap:operation soapAction="http://tempuri.org/CheckUserLoginphp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDetails">
+      <soap:operation soapAction="http://tempuri.org/GetUserDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserDetailsgroup">
+      <soap:operation soapAction="http://tempuri.org/getUserDetailsgroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getApproverUser">
+      <soap:operation soapAction="http://tempuri.org/getApproverUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getApproverUserLB">
+      <soap:operation soapAction="http://tempuri.org/getApproverUserLB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSeatDetails">
+      <soap:operation soapAction="http://tempuri.org/getSeatDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSeatUserDetails">
+      <soap:operation soapAction="http://tempuri.org/getSeatUserDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLBDetailsSanchaya">
+      <soap:operation soapAction="http://tempuri.org/getLBDetailsSanchaya" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="savepasswordChange">
+      <soap:operation soapAction="http://tempuri.org/savepasswordChange" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSeatDetLBZonal">
+      <soap:operation soapAction="http://tempuri.org/getSeatDetLBZonal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSeatDetLBZonalSuite">
+      <soap:operation soapAction="http://tempuri.org/getSeatDetLBZonalSuite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSeatDetLBOfficeSuite">
+      <soap:operation soapAction="http://tempuri.org/getSeatDetLBOfficeSuite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSeatMember">
+      <soap:operation soapAction="http://tempuri.org/getSeatMember" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSeatMeetingClerk">
+      <soap:operation soapAction="http://tempuri.org/getSeatMeetingClerk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllUserSeatLB">
+      <soap:operation soapAction="http://tempuri.org/getAllUserSeatLB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDepartmentdet">
+      <soap:operation soapAction="http://tempuri.org/getDepartmentdet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDepartmentdetseat">
+      <soap:operation soapAction="http://tempuri.org/getDepartmentdetseat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getImplementingOfficerSankhya">
+      <soap:operation soapAction="http://tempuri.org/getImplementingOfficerSankhya" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getOutDoorStaffList">
+      <soap:operation soapAction="http://tempuri.org/getOutDoorStaffList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFunddetails">
+      <soap:operation soapAction="http://tempuri.org/getFunddetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMicrosector">
+      <soap:operation soapAction="http://tempuri.org/getMicrosector" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getProjectDetails">
+      <soap:operation soapAction="http://tempuri.org/getProjectDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getProjectDetailsByid">
+      <soap:operation soapAction="http://tempuri.org/getProjectDetailsByid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllUserSeatLBByUserType">
+      <soap:operation soapAction="http://tempuri.org/getAllUserSeatLBByUserType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSeatDetailsUnitcode">
+      <soap:operation soapAction="http://tempuri.org/getSeatDetailsUnitcode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDepartmentdetseatUnitcode">
+      <soap:operation soapAction="http://tempuri.org/getDepartmentdetseatUnitcode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllUserSeatLBUnitcode">
+      <soap:operation soapAction="http://tempuri.org/getAllUserSeatLBUnitcode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllUnitUnitcode">
+      <soap:operation soapAction="http://tempuri.org/getAllUnitUnitcode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllLBbyauditoffice">
+      <soap:operation soapAction="http://tempuri.org/getAllLBbyauditoffice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CheckUserLogin">
+      <soap12:operation soapAction="http://tempuri.org/CheckUserLogin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserDetailsALL">
+      <soap12:operation soapAction="http://tempuri.org/CheckUserDetailsALL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserLoginphp">
+      <soap12:operation soapAction="http://tempuri.org/CheckUserLoginphp" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDetails">
+      <soap12:operation soapAction="http://tempuri.org/GetUserDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserDetailsgroup">
+      <soap12:operation soapAction="http://tempuri.org/getUserDetailsgroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getApproverUser">
+      <soap12:operation soapAction="http://tempuri.org/getApproverUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getApproverUserLB">
+      <soap12:operation soapAction="http://tempuri.org/getApproverUserLB" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSeatDetails">
+      <soap12:operation soapAction="http://tempuri.org/getSeatDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSeatUserDetails">
+      <soap12:operation soapAction="http://tempuri.org/getSeatUserDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLBDetailsSanchaya">
+      <soap12:operation soapAction="http://tempuri.org/getLBDetailsSanchaya" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="savepasswordChange">
+      <soap12:operation soapAction="http://tempuri.org/savepasswordChange" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSeatDetLBZonal">
+      <soap12:operation soapAction="http://tempuri.org/getSeatDetLBZonal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSeatDetLBZonalSuite">
+      <soap12:operation soapAction="http://tempuri.org/getSeatDetLBZonalSuite" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSeatDetLBOfficeSuite">
+      <soap12:operation soapAction="http://tempuri.org/getSeatDetLBOfficeSuite" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSeatMember">
+      <soap12:operation soapAction="http://tempuri.org/getSeatMember" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSeatMeetingClerk">
+      <soap12:operation soapAction="http://tempuri.org/getSeatMeetingClerk" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllUserSeatLB">
+      <soap12:operation soapAction="http://tempuri.org/getAllUserSeatLB" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDepartmentdet">
+      <soap12:operation soapAction="http://tempuri.org/getDepartmentdet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDepartmentdetseat">
+      <soap12:operation soapAction="http://tempuri.org/getDepartmentdetseat" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getImplementingOfficerSankhya">
+      <soap12:operation soapAction="http://tempuri.org/getImplementingOfficerSankhya" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getOutDoorStaffList">
+      <soap12:operation soapAction="http://tempuri.org/getOutDoorStaffList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFunddetails">
+      <soap12:operation soapAction="http://tempuri.org/getFunddetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMicrosector">
+      <soap12:operation soapAction="http://tempuri.org/getMicrosector" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getProjectDetails">
+      <soap12:operation soapAction="http://tempuri.org/getProjectDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getProjectDetailsByid">
+      <soap12:operation soapAction="http://tempuri.org/getProjectDetailsByid" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllUserSeatLBByUserType">
+      <soap12:operation soapAction="http://tempuri.org/getAllUserSeatLBByUserType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSeatDetailsUnitcode">
+      <soap12:operation soapAction="http://tempuri.org/getSeatDetailsUnitcode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDepartmentdetseatUnitcode">
+      <soap12:operation soapAction="http://tempuri.org/getDepartmentdetseatUnitcode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllUserSeatLBUnitcode">
+      <soap12:operation soapAction="http://tempuri.org/getAllUserSeatLBUnitcode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllUnitUnitcode">
+      <soap12:operation soapAction="http://tempuri.org/getAllUnitUnitcode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllLBbyauditoffice">
+      <soap12:operation soapAction="http://tempuri.org/getAllLBbyauditoffice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceHttpGet" type="tns:ServiceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="CheckUserLogin">
+      <http:operation location="/CheckUserLogin" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserDetailsALL">
+      <http:operation location="/CheckUserDetailsALL" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserLoginphp">
+      <http:operation location="/CheckUserLoginphp" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDetails">
+      <http:operation location="/GetUserDetails" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserDetailsgroup">
+      <http:operation location="/getUserDetailsgroup" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getApproverUser">
+      <http:operation location="/getApproverUser" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getApproverUserLB">
+      <http:operation location="/getApproverUserLB" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSeatDetails">
+      <http:operation location="/getSeatDetails" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSeatUserDetails">
+      <http:operation location="/getSeatUserDetails" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLBDetailsSanchaya">
+      <http:operation location="/getLBDetailsSanchaya" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="savepasswordChange">
+      <http:operation location="/savepasswordChange" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSeatDetLBZonal">
+      <http:operation location="/getSeatDetLBZonal" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSeatDetLBZonalSuite">
+      <http:operation location="/getSeatDetLBZonalSuite" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSeatDetLBOfficeSuite">
+      <http:operation location="/getSeatDetLBOfficeSuite" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSeatMember">
+      <http:operation location="/getSeatMember" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSeatMeetingClerk">
+      <http:operation location="/getSeatMeetingClerk" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllUserSeatLB">
+      <http:operation location="/getAllUserSeatLB" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDepartmentdet">
+      <http:operation location="/getDepartmentdet" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDepartmentdetseat">
+      <http:operation location="/getDepartmentdetseat" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getImplementingOfficerSankhya">
+      <http:operation location="/getImplementingOfficerSankhya" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getOutDoorStaffList">
+      <http:operation location="/getOutDoorStaffList" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFunddetails">
+      <http:operation location="/getFunddetails" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMicrosector">
+      <http:operation location="/getMicrosector" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getProjectDetails">
+      <http:operation location="/getProjectDetails" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getProjectDetailsByid">
+      <http:operation location="/getProjectDetailsByid" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllUserSeatLBByUserType">
+      <http:operation location="/getAllUserSeatLBByUserType" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSeatDetailsUnitcode">
+      <http:operation location="/getSeatDetailsUnitcode" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDepartmentdetseatUnitcode">
+      <http:operation location="/getDepartmentdetseatUnitcode" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllUserSeatLBUnitcode">
+      <http:operation location="/getAllUserSeatLBUnitcode" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllUnitUnitcode">
+      <http:operation location="/getAllUnitUnitcode" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllLBbyauditoffice">
+      <http:operation location="/getAllLBbyauditoffice" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceHttpPost" type="tns:ServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="CheckUserLogin">
+      <http:operation location="/CheckUserLogin" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserDetailsALL">
+      <http:operation location="/CheckUserDetailsALL" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserLoginphp">
+      <http:operation location="/CheckUserLoginphp" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDetails">
+      <http:operation location="/GetUserDetails" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserDetailsgroup">
+      <http:operation location="/getUserDetailsgroup" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getApproverUser">
+      <http:operation location="/getApproverUser" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getApproverUserLB">
+      <http:operation location="/getApproverUserLB" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSeatDetails">
+      <http:operation location="/getSeatDetails" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSeatUserDetails">
+      <http:operation location="/getSeatUserDetails" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLBDetailsSanchaya">
+      <http:operation location="/getLBDetailsSanchaya" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="savepasswordChange">
+      <http:operation location="/savepasswordChange" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSeatDetLBZonal">
+      <http:operation location="/getSeatDetLBZonal" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSeatDetLBZonalSuite">
+      <http:operation location="/getSeatDetLBZonalSuite" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSeatDetLBOfficeSuite">
+      <http:operation location="/getSeatDetLBOfficeSuite" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSeatMember">
+      <http:operation location="/getSeatMember" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSeatMeetingClerk">
+      <http:operation location="/getSeatMeetingClerk" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllUserSeatLB">
+      <http:operation location="/getAllUserSeatLB" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDepartmentdet">
+      <http:operation location="/getDepartmentdet" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDepartmentdetseat">
+      <http:operation location="/getDepartmentdetseat" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getImplementingOfficerSankhya">
+      <http:operation location="/getImplementingOfficerSankhya" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getOutDoorStaffList">
+      <http:operation location="/getOutDoorStaffList" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFunddetails">
+      <http:operation location="/getFunddetails" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMicrosector">
+      <http:operation location="/getMicrosector" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getProjectDetails">
+      <http:operation location="/getProjectDetails" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getProjectDetailsByid">
+      <http:operation location="/getProjectDetailsByid" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllUserSeatLBByUserType">
+      <http:operation location="/getAllUserSeatLBByUserType" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSeatDetailsUnitcode">
+      <http:operation location="/getSeatDetailsUnitcode" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDepartmentdetseatUnitcode">
+      <http:operation location="/getDepartmentdetseatUnitcode" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllUserSeatLBUnitcode">
+      <http:operation location="/getAllUserSeatLBUnitcode" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllUnitUnitcode">
+      <http:operation location="/getAllUnitUnitcode" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllLBbyauditoffice">
+      <http:operation location="/getAllLBbyauditoffice" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://172.16.8.90/loginservice/service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://172.16.8.90/loginservice/service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceHttpGet" binding="tns:ServiceHttpGet">
+      <http:address location="http://172.16.8.90/loginservice/service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceHttpPost" binding="tns:ServiceHttpPost">
+      <http:address location="http://172.16.8.90/loginservice/service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

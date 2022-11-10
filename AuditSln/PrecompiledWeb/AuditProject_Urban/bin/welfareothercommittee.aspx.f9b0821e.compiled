@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AuditProject/Pages/WelfareOtherCommittee.aspx" hash="fffffff1d8439188" filehash="c976b465e7eb65d7" flags="110000" assembly="App_Web_9ljaxl7o" type="ASP.pages_welfareothercommittee_aspx">
+    <filedeps>
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master" />
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master.cs" />
+        <filedep name="/AuditProject/Pages/WelfareOtherCommittee.aspx" />
+        <filedep name="/AuditProject/Pages/WelfareOtherCommittee.aspx.cs" />
+    </filedeps>
+</preserve>

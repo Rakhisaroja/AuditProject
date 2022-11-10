@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AuditProject/Pages/SocialJusticeBudsSchool.aspx" hash="fffffff1d8439188" filehash="4bfb4124ea5435f6" flags="110000" assembly="App_Web_ohj-vjff" type="ASP.pages_socialjusticebudsschool_aspx">
+    <filedeps>
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master" />
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master.cs" />
+        <filedep name="/AuditProject/Pages/SocialJusticeBudsSchool.aspx" />
+        <filedep name="/AuditProject/Pages/SocialJusticeBudsSchool.aspx.cs" />
+    </filedeps>
+</preserve>

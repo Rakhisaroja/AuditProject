@@ -1,0 +1,44 @@
+using System;
+using System.Data;
+using System.Configuration;
+using System.Collections;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+
+public partial class Pages_WardDetails : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+
+            fillGrid();
+        }
+    }
+
+    void fillGrid()
+    {
+        SetGridDefaultCmnt();
+    }
+    private void SetGridDefaultCmnt()
+    {
+        GlobalClass gblObj = new GlobalClass();
+        ArrayList ar = new ArrayList();
+        ar.Add("intID");
+        ar.Add("intID1");
+        ar.Add("intID2");
+        ar.Add("intID3");
+        ar.Add("intID4");
+        ar.Add("intID5");
+        ar.Add("intID6");
+        ar.Add("AgendaProcedure");
+        ar.Add("AgendaProcedure1");
+        ar.Add("AgendaProcedure2");
+        ar.Add("AgendaProcedure3");
+       // gblObj.SetGridDefault(gvGrant, ar);
+    }
+}

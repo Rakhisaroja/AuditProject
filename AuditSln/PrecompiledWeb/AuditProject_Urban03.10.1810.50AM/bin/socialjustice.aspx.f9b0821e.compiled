@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AuditProject/Pages/SocialJustice.aspx" hash="fffffff1d8439188" filehash="c5dbd0e1f5819430" flags="110000" assembly="App_Web_kzu_2uhr" type="ASP.pages_socialjustice_aspx">
+    <filedeps>
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master" />
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master.cs" />
+        <filedep name="/AuditProject/Pages/SocialJustice.aspx" />
+        <filedep name="/AuditProject/Pages/SocialJustice.aspx.cs" />
+    </filedeps>
+</preserve>

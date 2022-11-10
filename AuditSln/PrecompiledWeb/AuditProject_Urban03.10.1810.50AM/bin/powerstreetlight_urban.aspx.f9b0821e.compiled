@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AuditProject/Pages/PowerStreetLight_Urban.aspx" hash="fffffff1d8439188" filehash="eaa11d5c5a144954" flags="110000" assembly="App_Web_ygqesju1" type="ASP.pages_powerstreetlight_urban_aspx">
+    <filedeps>
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master" />
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master.cs" />
+        <filedep name="/AuditProject/Pages/PowerStreetLight_Urban.aspx" />
+        <filedep name="/AuditProject/Pages/PowerStreetLight_Urban.aspx.cs" />
+    </filedeps>
+</preserve>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AuditProject/Pages/AgricultureDetails_Urban.aspx" hash="fffffff1d8439188" filehash="75ae1ba88657be17" flags="110000" assembly="App_Web_ohj-vjff" type="ASP.pages_agriculturedetails_urban_aspx">
+    <filedeps>
+        <filedep name="/AuditProject/Pages/AgricultureDetails_Urban.aspx" />
+        <filedep name="/AuditProject/Pages/AgricultureDetails_Urban.aspx.cs" />
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master" />
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master.cs" />
+    </filedeps>
+</preserve>

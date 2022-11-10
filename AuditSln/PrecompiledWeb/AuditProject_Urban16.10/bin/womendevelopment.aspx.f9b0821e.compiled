@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AuditProject/Pages/WomenDevelopment.aspx" hash="fffffff1d8439188" filehash="3f6c033ccaa31bd1" flags="110000" assembly="App_Web_eqyw__tw" type="ASP.pages_womendevelopment_aspx">
+    <filedeps>
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master" />
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master.cs" />
+        <filedep name="/AuditProject/Pages/WomenDevelopment.aspx" />
+        <filedep name="/AuditProject/Pages/WomenDevelopment.aspx.cs" />
+    </filedeps>
+</preserve>

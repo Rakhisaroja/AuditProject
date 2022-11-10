@@ -1,0 +1,39 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+@font-face {
+    font-family: 'ml-ttbhavananormal';
+    src: url('../fonts/ml_tt_bhavana_normal-webfont.woff2') format('woff2'),
+         url('../fonts/ml_tt_bhavana_normal-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratmedium';
+    src: url('../fonts/montserrat-medium-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratlight';
+    src: url('../fonts/montserrat-light-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'mlw-ttrevathinormal';
+    src: url('../fonts/ml_tt_revathi-webfont.woff2') format('woff2'),
+         url('../fonts/ml_tt_revathi-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

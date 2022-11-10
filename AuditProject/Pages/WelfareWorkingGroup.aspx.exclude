@@ -1,0 +1,194 @@
+﻿<%@ Page Language="C#" MasterPageFile="~/Pages/AuditMasterPage.master" AutoEventWireup="true" CodeFile="WelfareWorkingGroup.aspx.cs" Inherits="Pages_WelfareWorkingGroup" Title="Untitled Page" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+
+<div class="content mt-3">
+            <div class="animated fadeIn">
+              <div class="row">
+
+                <div class="col-md-12">
+                    <div class="title-blue-Head">ചെലവ് ഭാഗം
+                    </div>
+                    <div style="font-weight: bold; font-size: 15pt; font-family: Meera" >
+    <p class="Standarduser"
+        style="margin: 0cm 0cm 0pt">
+        <b><span
+            lang="ML"
+            style="color: #000000;
+            font-family: 'Meera','sans-serif'">
+        സി(i) വര്‍ക്കിംഗ് ഗ്രൂപ്പുകള്‍</span></b><span
+                style="font-family: 'Meera','sans-serif'"><?xml
+                    namespace=""
+                    ns="urn:schemas-microsoft-com:office:office"
+                    prefix="o" ?><?xml namespace="" prefix="o" ?><o:p></o:p></span></p>
+                    </div>
+                        <div class="card">
+                           <%-- <div class="card-header">
+                                <strong class="card-titlen">എ) അക്രൂവല്‍ അടിസ്ഥാനത്തിലുളള നികുതി നികുതിയേതര വരുമാനങ്ങള്‍</strong>
+                                
+                            </div>--%>
+                            
+                       <div class="table table-striped table-bordered">
+                        <DIV style="OVERFLOW: scroll; WIDTH: 1200px;height:300px" >
+                            
+                            
+                           <asp:Repeater ID="rptCentralFund" runat="server" OnItemCommand="rptCentralFund_ItemCommand"    >
+
+                       
+                             <HeaderTemplate>
+        <table cellspacing="0" rules="all" border="1" style="font-size: 20px;font-family: Meera; vertical-align:middle" >
+        <tr> <th scope="col"  rowspan="2" align="center"  >
+                    ക്ര.ന
+                </th>
+                <th scope="col" style="text-align:center"  align="center" colspan="7"  >
+                    നിലവിലുള്ള വിവരങ്ങള്‍
+                </th>
+                  <th scope="col"  style="text-align:center"  align="center" colspan="7"  >
+                   ഓഡിറ്റില്‍ കണ്ടെത്തിയ വിവരങ്ങള്‍
+                </th>
+                          
+            </tr>
+            
+            <tr>
+               
+              
+                   <th scope="col" style="width: 100px"  align="center">
+                 ഗ്രൂപ്പിന്റെ പേര്
+                </th>
+                   <th scope="col" style="width: 100px" align="center">
+                 ചെയര്‍മാന്‍(പേര് വിവരം)
+
+                </th>
+                 <th scope="col" style="width: 100px" align="center">
+                   കണ്‍വീനര്‍(പേര് വിവരം)
+
+                </th>
+                 <th scope="col" style="width: 100px" align="center">
+                  കൂടിയ യോഗങ്ങളുടെ എണ്ണം / തീയതി
+                </th>
+                 <th scope="col" style="width: 100px" align="center">
+                   സ്റ്റാറ്റസ് റിപ്പോര്‍ട്ട് തയ്യാറാക്കിയിട്ടുണ്ട് /ഇല്ല
+
+                </th>
+                 <th scope="col" style="width: 100px" align="center">
+                 മോണിറ്ററിംഗ്  കമ്മിറ്റിയായി പ്രവൃത്തിച്ചിട്ടുണ്ട് / ഇല്ല
+                </th>
+                   <th scope="col" style="width: 100px" align="center">
+                മോണിറ്ററിംഗ് റിപ്പോര്‍ട്ട് തയ്യാറാക്കിയിട്ടുണ്ട് / ഇല്ല
+                </th>
+                  
+                 
+                   <th scope="col" style="width: 100px"  align="center">
+                 ഗ്രൂപ്പിന്റെ പേര്
+                </th>
+                   <th scope="col" style="width: 100px" align="center">
+                 ചെയര്‍മാന്‍(പേര് വിവരം)
+
+                </th>
+                 <th scope="col" style="width: 100px" align="center">
+                   കണ്‍വീനര്‍(പേര് വിവരം)
+
+                </th>
+                 <th scope="col" style="width: 100px" align="center">
+                  കൂടിയ യോഗങ്ങളുടെ എണ്ണം / തീയതി
+                </th>
+                 <th scope="col" style="width: 100px" align="center">
+                   സ്റ്റാറ്റസ് റിപ്പോര്‍ട്ട് തയ്യാറാക്കിയിട്ടുണ്ട് /ഇല്ല
+
+                </th>
+                 <th scope="col" style="width: 100px" align="center">
+                 മോണിറ്ററിംഗ്  കമ്മിറ്റിയായി പ്രവൃത്തിച്ചിട്ടുണ്ട് / ഇല്ല
+                </th>
+                   <th scope="col" style="width: 100px" align="center">
+                മോണിറ്ററിംഗ് റിപ്പോര്‍ട്ട് തയ്യാറാക്കിയിട്ടുണ്ട് / ഇല്ല
+                </th>
+                  
+               <%-- <th></th>--%>
+                   
+                  
+            </tr>
+             
+    </HeaderTemplate>
+      <%-- <ItemTemplate>
+        <tr>
+            <td>
+                 <asp:Label ID="Label1" runat="server" Text='<%# Eval("chvincometypemal") %>' />
+            </td>
+            
+            </ItemTemplate>--%>
+    <ItemTemplate>
+       
+              <tr>
+            <td>
+                <asp:TextBox ID="txtSlno" runat="server" Text='<%# Eval("SLNO") %>' />
+            </td>
+            <td><asp:TextBox ID="txtGroupName" runat="server" Text='<%# Eval("vchaccounthead") %>' />
+            <asp:Label ID="txtChairmanName" runat="server" Visible="false" Text='<%# Eval("vchaccountheadcode") %>' />
+            </td>
+            <td><asp:TextBox ID="txtConveneorName" runat="server" Text='<%# Eval("numobamount") %>' /></td>
+             <td>
+                <asp:TextBox ID="txtMeetingCount" runat="server" Text='<%# Eval("vchaccounthead") %>' />
+            </td>
+            <td>
+                <asp:TextBox ID="txtStatusreport" runat="server" Text='<%# Eval("numauditedobamount") %>' />
+            </td>
+              <td>
+                <asp:TextBox ID="txtMonitoringCommitte" runat="server" Text='<%# Eval("vchaccounthead") %>' />
+            </td>
+            <td>
+                <asp:TextBox ID="txtMonitoringRpt" runat="server" Text='<%# Eval("numauditedobamount") %>' />
+            </td>
+            
+                 <td><asp:TextBox ID="txtAuditGroupName" runat="server" Text='<%# Eval("vchaccounthead") %>' />
+            <%--<asp:Label ID="Label1" runat="server" Visible="false" Text='<%# Eval("vchaccountheadcode") %>' />--%>
+            </td>
+            <td><asp:TextBox ID="txtAuditChairmanName" runat="server" Text='<%# Eval("numobamount") %>' /></td>
+             <td>
+                <asp:TextBox ID="txtAuditConveneorName" runat="server" Text='<%# Eval("vchaccounthead") %>' />
+            </td>
+            <td>
+                <asp:TextBox ID="txtAuditMeetingCount" runat="server" Text='<%# Eval("numauditedobamount") %>' />
+            </td>
+              <td>
+                <asp:TextBox ID="txtAuditStatusreport" runat="server" Text='<%# Eval("vchaccounthead") %>' />
+            </td>
+            <td>
+                <asp:TextBox ID="txtAuditMonitoringCommitte" runat="server" Text='<%# Eval("numauditedobamount") %>' />
+            </td>
+              <td>
+                <asp:TextBox ID="txtAuditMonitoringRpt" runat="server" Text='<%# Eval("numauditedobamount") %>' />
+            </td>
+           </tr></ItemTemplate>
+                        
+
+
+</asp:Repeater>
+
+
+</div></div>
+<div> <table width="100%"> <tr> <td style="width: 100%; height: 21px;" colspan="3" align="center">
+                               <asp:Button
+                                    ID="Button1"
+                                    runat="server"
+                                    CssClass="lblMal"
+                                    OnClick="btnsave_Click"
+                                    TabIndex="10"
+                                    Text="സമര്‍പ്പിക്കുക" />
+                               </td></tr> 
+                              </table>
+                            </div>
+                 
+                          
+                      <%--  </div>--%>
+                      <%--  </div>--%>
+                         
+                </div>   
+               </div> 
+             </div>  
+           </div>
+
+
+
+
+
+</asp:Content>
+

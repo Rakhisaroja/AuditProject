@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AuditProject/Pages/TaxNontaxCashDetails.aspx" hash="fffffff1d8439188" filehash="a62c79788ab8f935" flags="110000" assembly="App_Web_e8oh8xra" type="ASP.pages_taxnontaxcashdetails_aspx">
+    <filedeps>
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master" />
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master.cs" />
+        <filedep name="/AuditProject/Pages/TaxNontaxCashDetails.aspx" />
+        <filedep name="/AuditProject/Pages/TaxNontaxCashDetails.aspx.cs" />
+    </filedeps>
+</preserve>

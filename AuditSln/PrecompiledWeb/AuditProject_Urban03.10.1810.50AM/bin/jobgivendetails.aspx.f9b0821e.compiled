@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AuditProject/Pages/JobGivenDetails.aspx" hash="fffffff1d8439188" filehash="6714efe2461a0566" flags="110000" assembly="App_Web_cxdy478b" type="ASP.pages_jobgivendetails_aspx">
+    <filedeps>
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master" />
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master.cs" />
+        <filedep name="/AuditProject/Pages/JobGivenDetails.aspx" />
+        <filedep name="/AuditProject/Pages/JobGivenDetails.aspx.cs" />
+    </filedeps>
+</preserve>

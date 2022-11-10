@@ -1,0 +1,230 @@
+// -----------------------------------------------------------------------------
+// When having several themes, this file contains everything related to the
+// default one.
+// -----------------------------------------------------------------------------
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+body {
+    font-family: $brand-eng-font-medium;
+}
+
+.innerpage_body {
+    background: #e9e9e9;
+}
+
+.page_title_wrap {
+    background: $brand-color-medium;
+    font-family: $brand-malayalam-font;
+    padding: 5px 15px;
+    margin-bottom: 20px;
+    color: #fff;
+    h2 {
+        margin: 0px;
+    }
+    img {
+        vertical-align: middle;
+    }
+}
+
+.media-body {
+    width: 100%;
+}
+
+
+
+
+.page_wrapper {
+    padding-left: 0px;
+    transition: all .4s ease 0s;
+    height: 100%
+}
+
+.sidebar-wrapper {
+    margin-left: -233px;
+    left: 0px;
+    width: 233px;
+    background: #046dd5;
+    position: fixed;
+    height: 100%;
+    z-index: 10000;
+    transition: all .4s ease 0s;
+
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-position: right 160px;
+    background-repeat: no-repeat;
+}
+
+.page-content-wrapper {
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.page_wrapper.active {
+    padding-left: 233px;
+}
+
+.page_wrapper.active .sidebar-wrapper {
+    left: 233px;
+}
+
+.page-content-wrapper {
+    width: 100%;
+    padding-top: 80px;
+}
+
+
+/* Sidebar */
+
+.mob_info {
+    display: none;
+    padding-bottom: 10px;
+    background: #0ba9d7;
+    .inn_mob_search {
+        padding: 10px;
+    }
+    .mob_logout {
+        float: right;
+        margin-right: 10px;
+        color: #fff;
+    }
+    .mob_logout:hover,
+    .mob_logout:focus,
+    .mob_logout:active {
+        color: #fff;
+        text-decoration: underline;
+    }
+}
+
+.sidebar_logo {
+    background: $brand-mid-grey;
+    text-align: center;
+    padding: 10px;
+    img {
+        max-width: 100%;
+    }
+}
+
+.sidebar_scroll {
+    width: 233px;
+    position: absolute;
+    height: 100%;
+    padding-top: 132px;
+    top: 0px;
+    z-index: -1;
+}
+
+.sidebar_nav {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    li {
+        font-family: $brand-malayalam-font;
+        font-size: 18px;
+
+        border-bottom: 1px solid #178afc;
+    }
+    a {
+        display: block;
+        padding: 6px 15px;
+        color: #fff;
+        text-decoration: none;
+        text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+    }
+    a:hover {
+        background: #052881;
+        text-decoration: none;
+    }
+}
+
+
+/* inner page banner */
+
+.inn_banner_section {
+    .inn_banner_wrap {
+        width: 100%;
+        height: 362px;
+        color: #fff;
+        display: inline-block;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+.inn_banner_right {
+    width: 100%;
+    height: 362px;
+}
+
+.inn_banner_box {
+    text-align: center;
+    padding: 20px 15px;
+}
+
+.inn_banner_half {
+    height: 50%;
+}
+
+.inn_box_icon_holder {
+    width: 68px;
+    height: 68px;
+    margin: 0 auto 20px;
+}
+
+.inn_box_number {
+    font-size: 18px;
+    color: #fff;
+}
+
+.inn_box_title {
+    font-size: 18px;
+    color: #fff;
+}
+
+.inn_box_bg_01 {
+    background: #026784;
+}
+
+.inn_box_bg_02 {
+    background: #0180bb;
+}
+
+.inn_box_bg_03 {
+    background: #02345f;
+}
+
+.inn_box_bg_04 {
+    background: #0ba9d7;
+}
+
+
+.inn_page_content {
+    padding: 27px 0;
+    p {
+        font-family: $paragraph-malayalam-font;
+        line-height: 24px;
+    }
+    h2 {
+        font-family: $brand-malayalam-font;
+
+    }
+}

@@ -1,0 +1,81 @@
+using System;
+using System.Data;
+using System.Configuration;
+using System.Collections;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+using AuditClassLibrary;
+public partial class Pages_Home : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+            if (Session["LBID"].ToString() != "" && Session["RoleID"].ToString() == "1")
+            {
+                pnlNewEntry.Visible = true;
+                chkAudit();
+                fill();
+            }
+            else
+            {
+                pnlNewEntry.Visible = false;
+            }
+
+        }
+    }
+    public void chkAudit()
+    {
+        CommonClass objcom = new CommonClass();
+        ArrayList arrin = new ArrayList();
+        DataSet ds = new DataSet();
+        arrin.Add(Session["unitID"]);
+        ds = objcom.FillData("[SP_M_AuditLB_S]", arrin, CommandType.StoredProcedure);
+        if (ds.Tables[0].Rows.Count > 0)
+        {
+            GlobalClass objgobl = new GlobalClass();
+            objgobl.FillCombo(ddlLocalbody, ds, 1);
+
+        }
+
+    }
+    protected void btnSubmit_Click(object sender, EventArgs e)
+    {
+        fill();
+        //Label mpLabel = (Label)Master.FindControl("lblLB");
+        //if (mpLabel != null)
+        //{
+        //    Label1.Text = "Master page label = " + mpLabel.Text;
+        //}
+       // mpLabel.Text = "gdsgdsgdgfg";
+         //ContentPlaceHolder plchldr= this.Master.Master.FindControl("ContentPlaceHolder1") as ContentPlaceHolder;
+         //   Label lbl = plchldr.FindControl("lblLB") as Label;
+         //    if(lbl !=null)
+         //    {
+         //        lbl.Text = "SomeText";
+         //    }
+    }
+    public void fill()
+    {
+        if (ddlLocalbody.SelectedIndex > 0)
+        {
+            int id = Convert.ToInt32(ddlLocalbody.SelectedValue);
+            Session["LBID"] = id.ToString();
+            Session["AuditLBName"] = ddlLocalbody.SelectedItem.ToString();
+        }
+    }
+    protected void ddlLocalbody_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        if (ddlLocalbody.SelectedIndex > 0)
+        {
+            Session["AuditLBName"] = "";
+            int id = Convert.ToInt32(ddlLocalbody.SelectedValue);
+            Session["LBID"] = id.ToString();
+            Session["AuditLBName"] = ddlLocalbody.SelectedItem.ToString();
+        }
+    }
+}

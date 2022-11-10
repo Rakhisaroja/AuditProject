@@ -1,0 +1,60 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+.footer_nav_wrap {
+    background: $brand-mid-grey;
+    font-family: $paragraph-malayalam-font;
+}
+
+.footer_nav {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    margin: 0px;
+    padding: 0px;
+    li {
+        display: table-cell;
+        text-align: center;
+        font-size: 17px;
+        a {
+            display: block;
+            width: 100%;
+            padding: 30px 10px 23px 10px;
+            color: #fff;
+            text-decoration: none;
+        }
+        a:hover {
+            background: $brand-color-dark;
+        }
+    }
+    li:nth-child(odd) {
+        a {
+            background: $brand-mid-grey;
+        }
+    }
+    li:nth-child(even) {
+        a {
+            background: $brand-light-grey;
+        }
+    }
+    li {
+        a:hover {
+            background: $brand-color-dark;
+        }
+    }
+
+}
+.footer_copyright{
+    text-align: center;
+    padding: 16px 0px;
+    font-family: $brand-eng-font-light;
+    color: #373737;
+    a{
+        color: #373737;
+        text-decoration: none;
+    }
+    a:hover{
+        color: $brand-color-dark;
+        text-decoration: none;
+    }
+}

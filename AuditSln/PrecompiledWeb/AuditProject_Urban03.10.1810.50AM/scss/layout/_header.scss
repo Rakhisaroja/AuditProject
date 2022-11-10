@@ -1,0 +1,161 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+header.landing_header {
+    height: 76px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    border-bottom: 1px solid #64d2fd;
+    background: rgba(62, 210, 253, 0.3);
+    .header-max {
+        max-width: 1110px;
+        margin: 0 auto;
+    }
+    .brand_wap {
+        padding: 7px 0;
+        float: left;
+        img {
+            max-width: 100%;
+        }
+    }
+    .login_section {
+        height: 76px;
+        float: right;
+        border-left: 1px solid #64d2fd;
+        font-family: $brand-eng-font-light;
+        .search_wrap {
+            width: 250px;
+            padding: 17px 10px;
+            border-right: 1px solid #64d2fd;
+            float: left;
+            .input-group {
+                .form-control {
+                    border: none;
+                    height: 41px;
+                    border-top-left-radius: 50px;
+                    border-top-right-radius: 0px;
+                    border-bottom-right-radius: 0px;
+                    border-bottom-left-radius: 50px;
+                }
+                .input-group-btn {
+                    .btn {
+                        border: none;
+                        height: 41px;
+                        width: 50px;
+                        border-top-left-radius: 0px;
+                        border-top-right-radius: 50px;
+                        border-bottom-right-radius: 50px;
+                        border-bottom-left-radius: 0px;
+                        background: $brand-color-medium;
+                        color: #fff;
+                        outline: none;
+                    }
+                    .glyphicon {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        .header_btn_wrap {
+            padding: 17px 0 17px 10px;
+            float: left;
+            .btn-default {
+                height: 41px;
+                line-height: 22px;
+                font-size: 13px;
+                padding: 10px 15px;
+                background: $brand-color-dark;
+                color: #fff;
+                -webkit-border-radius: 25px;
+                -moz-border-radius: 25px;
+                border-radius: 25px;
+                border: none;
+            }
+            .btn-default:hover {
+                background: $brand-color-medium;
+            }
+            .mobile_search {
+                display: none;
+            }
+        }
+    }
+    .landing_hamburger {
+        float: right;
+        margin: 17px 0;
+        display: none;
+        .btn {
+            font-size: 19px;
+            background: $brand-color-dark;
+            color: #fff;
+        }
+    }
+}
+
+.inn_header {
+    height: 64px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background: #fff url(../images/inn_header_border.png);
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    .inn_logo_wrap {
+        width: 233px;
+        height: 61px;
+        padding: 20px 10px;
+        background: $brand-mid-grey;
+        float: left;
+        img {
+            max-width: 100%;
+        }
+    }
+    .menu-toggle {
+        display: none;
+        padding: 18px 20px;
+        background: #f7f7f7;
+        color: #222222;
+        float: left;
+        border-right: 1px solid #e8e8e8;
+        .glyphicon {
+            font-size: 20px;
+        }
+    }
+    .menu-toggle:hover{
+        background: $brand-color-medium;
+        color: #fff;
+    }
+    .logout_btn {
+        padding: 18px 20px;
+        background: #f7f7f7;
+        color: #222222;
+        float: right;
+        border-left: 1px solid #e8e8e8;
+        .glyphicon {
+            font-size: 20px;
+        }
+    }
+    .logout_btn:hover {
+        background: $brand-color-medium;
+        color: #fff;
+    }
+    .inn_search_wrap {
+        float: left;
+        width: 200px;
+        padding: 12px 15px;
+        .form-control,
+        .btn,
+        .btn:active,
+        .btn:focus,
+        .btn:hover {
+            border: none;
+            box-shadow: none;
+            outline: none;
+            background: #fff;
+        }
+        .glyphicon {
+            font-size: 20px;
+        }
+    }
+}

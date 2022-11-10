@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AuditProject/Pages/PublicWorkDet_Urban.aspx" hash="fffffff1d8439188" filehash="6bb167f3c809e584" flags="110000" assembly="App_Web_e8oh8xra" type="ASP.pages_publicworkdet_urban_aspx">
+    <filedeps>
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master" />
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master.cs" />
+        <filedep name="/AuditProject/Pages/PublicWorkDet_Urban.aspx" />
+        <filedep name="/AuditProject/Pages/PublicWorkDet_Urban.aspx.cs" />
+    </filedeps>
+</preserve>

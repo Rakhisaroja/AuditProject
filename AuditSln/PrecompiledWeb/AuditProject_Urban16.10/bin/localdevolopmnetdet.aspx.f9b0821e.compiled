@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AuditProject/Pages/LocalDevolopmnetDet.aspx" hash="fffffff1d8439188" filehash="e7ba023a68c42f53" flags="110000" assembly="App_Web_4taxyxrp" type="ASP.pages_localdevolopmnetdet_aspx">
+    <filedeps>
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master" />
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master.cs" />
+        <filedep name="/AuditProject/Pages/LocalDevolopmnetDet.aspx" />
+        <filedep name="/AuditProject/Pages/LocalDevolopmnetDet.aspx.cs" />
+    </filedeps>
+</preserve>

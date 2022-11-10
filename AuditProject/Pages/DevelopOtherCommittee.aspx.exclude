@@ -1,0 +1,121 @@
+﻿<%@ Page Language="C#" MasterPageFile="~/Pages/AuditMasterPage.master" AutoEventWireup="true" CodeFile="DevelopOtherCommittee.aspx.cs" Inherits="Pages_DevelopOtherCommittee" Title="Untitled Page" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<div class="content mt-3">
+            <div class="animated fadeIn">
+                <div class="row">
+
+                <div class="col-md-12">
+                <div class="title-blue-Head">ചിലവ് ഭാഗം
+                </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <strong class="card-titlen">ബി. വികസനകാര്യ സ്റ്റാന്റിംഗ് കമ്മിറ്റി
+</strong>
+                        </div>
+                        <div class="card-header">
+                            <strong class="card-titlen">ബി(ii) മറ്റ് കമ്മിറ്റികള്‍ യോഗങ്ങള്‍
+</strong>
+                        </div>
+                       <%-- <div class="card-body">--%>
+                        <div class="table table-striped table-bordered">
+                        <div style="OVERFLOW: scroll; WIDTH: 1200px;height:300px" >
+                       <%-- <asp:GridView id="grvBalanced" runat="server"  AutoGenerateColumns="False"   Width="100%" CellPadding="2" BackColor="White" BorderColor="Silver" Font-Names="Meera" OnRowCreated="grvBalanced_RowCreated"  >
+                       --%>
+                       <div class="card-body">
+                       <asp:Repeater ID="grvOther" runat="server" OnItemCommand="grvOther_ItemCommand"   >
+
+                       
+                             <HeaderTemplate>
+        <table cellspacing="0" rules="all" border="1" style="font-size: 20px;font-family: Meera; vertical-align:middle" >
+        <tr> <th scope="col"  rowspan="2" align="center"  >
+                    ക്ര.ന
+                </th>
+                <th scope="col" style="text-align:center"  align="center" colspan="3"  >
+                    നിലവിലുള്ള വിവരങ്ങള്‍
+                </th>
+                  <th scope="col"  style="text-align:center"  align="center" colspan="3"  >
+                   ഓഡിറ്റില്‍ കണ്ടെത്തിയ വിവരങ്ങള്‍
+                </th>
+                          
+            </tr>
+            
+            <tr>
+               
+                <th scope="col" style="width: 200px" align="center">
+                 കമ്മിറ്റികളുടെ പേര്
+                </th>
+              <%--  <th></th>--%>
+                <th scope="col" style="width: 200px"  align="center">
+                  പ്രവര്‍ത്തന മേഖല
+                </th>
+               <%-- <th></th>--%>
+                   <th scope ബാങ്ക്="col" style="width: 100px"  align="center">
+                    യോഗ വിവരം
+                </th>
+                     <th scope="col" style="width: 200px" align="center">
+                 കമ്മിറ്റികളുടെ പേര്
+                </th>
+              <%--  <th></th>--%>
+                <th scope="col" style="width: 200px"  align="center">
+                  പ്രവര്‍ത്തന മേഖല
+                </th>
+               <%-- <th></th>--%>
+                   <th scope ബാങ്ക്="col" style="width: 100px"  align="center">
+                    യോഗ വിവരം
+                </th>
+                  
+            </tr>
+             
+    </HeaderTemplate>
+    <ItemTemplate>
+        <tr>
+            <td>
+                <asp:TextBox ID="txtSlno" runat="server" Text='<%# Eval("SLNO") %>' />
+            </td>
+            <td><asp:TextBox ID="txtNameofCommittee" runat="server" Text='<%# Eval("vchaccounthead") %>' />
+     <%--       <asp:Label ID="hdfgh" runat="server" Visible="false" Text='<%# Eval("vchaccountheadcode") %>' />--%>
+            </td>
+              <td><asp:TextBox ID="txtWorking" runat="server" Text='<%# Eval("vchaccounthead") %>' />
+            
+             
+            </td>
+            <td><asp:TextBox ID="txtMeetingDetails" runat="server" Text='<%# Eval("numobamount") %>' /></td>
+            
+          
+                      <td><asp:TextBox ID="txtAuditNameofCommittee" runat="server" Text='<%# Eval("vchaccounthead") %>' />
+     <%--       <asp:Label ID="hdfgh" runat="server" Visible="false" Text='<%# Eval("vchaccountheadcode") %>' />--%>
+            </td>
+              <td><asp:TextBox ID="txtAuditWorking" runat="server" Text='<%# Eval("vchaccounthead") %>' />
+            
+             
+            </td>
+            <td><asp:TextBox ID="txtAuditMeetingDetails" runat="server" Text='<%# Eval("numobamount") %>' /></td>
+           </tr></ItemTemplate>
+                        
+
+
+</asp:Repeater></div></div>     
+
+
+</div><div> <table width="100%"> <tr> <td style="width: 100%; height: 21px;" colspan="3" align="center">
+                               <asp:Button
+                                    ID="btnSave"
+                                    runat="server"
+                                    CssClass="btn btn-secondary btn-sm"
+                                    OnClick="btnSave_Click"
+                                    TabIndex="10"
+                                    Text="സമര്‍പ്പിക്കുക" />
+                               </td></tr> 
+                              </table>
+                            </div>
+                  
+                        </div>
+                   <%-- </div>--%>
+                </div>
+ 
+
+                </div>
+            </div><!-- .animated -->
+        </div>
+</asp:Content>
+

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AuditProject/Pages/LoanRepaymentDetails.aspx" hash="fffffff1d8439188" filehash="5c0143151ea8db4f" flags="110000" assembly="App_Web_2dg_wy2j" type="ASP.pages_loanrepaymentdetails_aspx">
+    <filedeps>
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master" />
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master.cs" />
+        <filedep name="/AuditProject/Pages/LoanRepaymentDetails.aspx" />
+        <filedep name="/AuditProject/Pages/LoanRepaymentDetails.aspx.cs" />
+    </filedeps>
+</preserve>

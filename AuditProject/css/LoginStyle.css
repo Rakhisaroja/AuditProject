@@ -1,0 +1,100 @@
+﻿/* body{
+  background: #75a3a3; 
+  color:#888;
+  font-family: 'Meera', AnjaliOldLipi;
+  background-position:center;
+  width:100%;
+  text-transform:uppercase; 
+}
+ */ 
+.boxnew{
+  width:50%;
+  max-width:800px;
+  height:auto;
+  margin:0 auto;
+  margin-top:100px;
+ /* background:#ffffe6;*/
+  background:#222;
+  border-radius:7px;
+  box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.9);
+  padding:50px 50px 50px 50px;
+}
+ 
+.contentnew{
+  width:85%;
+  height:auto;
+   font-family:Meera;
+   font-size:10px;
+  margin:0 auto;
+  padding:10px 0px;
+  
+  text-align:center;
+}
+ 
+.contentnew h1{
+  font-size: 13px;
+  font-weight:400;
+  color: #669900;
+  letter-spacing:0.125em;
+  text-align:center;
+}
+ 
+.field{
+  width:85%;
+  margin:10px auto;
+  padding:10px;
+  /*background:#d9d9d9;*/
+   background:#2c2c2c;
+  border:none;
+  box-shadow: .5px .5px .5px .5px;
+  border-radius:5px;
+  outline:none;
+  color:Black;
+  font-weight:700;
+  letter-spacing:0.125em;
+  text-align:center;
+  
+}
+ 
+ 
+::-webkit-input-placeholder{ /* WebKit browsers  */
+  color:#5A5A5A;
+}
+:-moz-placeholder{ /* Mozilla Firefox 4 to 18  */
+  color:#5A5A5A;
+}
+::-moz-placeholder{ /* Mozilla Firefox 19+  */
+  color:#5A5A5A;
+}
+:-ms-input-placeholder{ /* Internet Explorer 10+  */
+  color:#5A5A5A;
+}
+ 
+ 
+ 
+.btnn1{
+  width:70%;
+  
+   margin:10px auto;
+  padding:10px;
+  background:#161616;
+  border:none;
+  box-shadow: 0px 1px 0px 0px #111;
+  border-radius:3px;
+  outline:none;
+  color:#FFBF00;
+  font-weight:700;
+  letter-spacing:0.125em;
+  text-align:center;
+  text-transform:uppercase;
+}
+ 
+.btnn1:hover{
+  background:#FFBF00;
+  color:#333;
+}
+ 
+.btnn1:active{
+  background:#FACC2E;
+  color:#333;
+}

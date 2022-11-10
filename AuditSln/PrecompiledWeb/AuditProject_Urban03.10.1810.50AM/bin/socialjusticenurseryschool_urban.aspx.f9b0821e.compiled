@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AuditProject/Pages/SocialJusticeNurserySchool_Urban.aspx" hash="fffffff1d8439188" filehash="1df4f043b83cacbd" flags="110000" assembly="App_Web_mwpzgqa6" type="ASP.pages_socialjusticenurseryschool_urban_aspx">
+    <filedeps>
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master" />
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master.cs" />
+        <filedep name="/AuditProject/Pages/SocialJusticeNurserySchool_Urban.aspx" />
+        <filedep name="/AuditProject/Pages/SocialJusticeNurserySchool_Urban.aspx.cs" />
+    </filedeps>
+</preserve>

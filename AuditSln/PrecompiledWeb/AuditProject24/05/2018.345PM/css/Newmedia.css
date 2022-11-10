@@ -1,0 +1,193 @@
+﻿@media (max-width: 1200px) {
+  .footer_nav {
+    text-align: center; }
+    .footer_nav li {
+      display: inline-block; }
+      .footer_nav li a {
+        padding: 30px 10px 23px 10px; } }
+@media (max-width: 1009px) {
+  .inn_header .menu-toggle {
+    display: inline-block; } }
+@media (min-width: 993px) {
+  header.landing_header .login_section {
+    display: inline-block !important; } }
+@media (max-width: 992px) {
+  header.landing_header .login_section {
+    background: rgba(255, 255, 255, 0.9);
+    display: none;
+    height: auto;
+    position: absolute;
+    right: -1px;
+    width: 237px;
+    top: 75px;
+    border: 1px solid #64d2fd; }
+    header.landing_header .login_section .search_wrap {
+      width: auto;
+      padding: 15px 10px;
+      border-right: none; }
+    header.landing_header .login_section .header_btn_wrap {
+      padding: 0px 0 15px 10px; }
+  header.landing_header .landing_hamburger {
+    display: inline-block; }
+
+  .menu_section_tr {
+    text-align: center; }
+
+  .menu_section_td {
+    display: inline-block;
+    width: 32%; }
+
+  .footer_nav li a {
+    padding: 30px 10px 23px 10px; }
+
+  .inn_header .menu-toggle {
+    display: inline-block; } }
+@media (max-width: 768px) {
+  .menu_section_td {
+    width: 50%; }
+
+  .sub_menu_box {
+    padding: 15px;
+    min-height: 230px;
+    margin-bottom: 15px; }
+    .sub_menu_box .sub_menu_icon_holder {
+      padding: 0px 0; }
+
+  .page_title_wrap h2 {
+    font-size: 22px; }
+
+  .footer_nav {
+    padding: 15px 0; }
+    .footer_nav li {
+      margin: 0 15px; }
+      .footer_nav li a {
+        padding: 0px 0px; }
+      .footer_nav li a:hover {
+        color: #4690d0; }
+    .footer_nav li:nth-child(odd) a {
+      background: none; }
+    .footer_nav li:nth-child(even) a {
+      background: none; }
+
+  .projects_section .projects_box_scroll {
+    height: auto;
+    overflow-x: auto;
+    overflow-y: auto;
+    padding-left: 40px; }
+  .projects_section .media-left {
+    display: block; }
+  .projects_section .media-body {
+    display: block; }
+  .projects_section .media .media-left img {
+    max-width: 100%; }
+
+  .quote_section .quote_thump_img {
+    margin-bottom: 15px; }
+
+  .page_wrapper.active {
+    padding-left: 0px; }
+
+  .inn_projects_section .media .media-left {
+    display: block;
+    padding: 25px 15px; }
+    .inn_projects_section .media .media-left img {
+      max-width: 100%; }
+  .inn_projects_section .inn_projects_box_scroll {
+    height: auto; } }
+@media (max-width: 580px) {
+  header.landing_header {
+    height: 64px; }
+    header.landing_header .brand_wap {
+      padding: 12px 0;
+      width: 260px; }
+    header.landing_header .landing_hamburger {
+      margin: 11px 0; }
+    header.landing_header .login_section {
+      top: 63px; }
+
+  .menu_section_tbl {
+    display: block; }
+
+  .menu_section_tr {
+    display: block; }
+
+  .menu_section_td {
+    width: 100%;
+    display: block; }
+    .menu_section_td .menu_icon_holder {
+      padding-top: 0px; }
+    .menu_section_td .menu_title_holder {
+      min-height: auto; }
+
+  .box_number {
+    font-size: 14px; }
+
+  .box_title {
+    font-size: 14px; }
+
+  .box_icon_holder {
+    margin: 0 auto 14px; }
+
+  .page_title_wrap h2 {
+    font-size: 19px; }
+
+  .inn_header .inn_search_wrap {
+    display: none; }
+  .inn_header .logout_btn {
+    display: none; }
+  .inn_header .menu-toggle {
+    float: right; }
+
+  .mob_info {
+    display: block; }
+
+  .sidebar_scroll {
+    padding-top: 213px; }
+
+  .inn_banner_section .inn_banner_wrap {
+    height: 240px; }
+
+  .sub_nav_col {
+    width: 100%; }
+
+  .news_section .media {
+    text-align: center; }
+    .news_section .media .media-left {
+      display: block; }
+      .news_section .media .media-left img {
+        margin: 0 auto 15px; }
+    .news_section .media .media-body {
+      display: block; }
+
+  .inner_page_news .media {
+    text-align: center; }
+    .inner_page_news .media .media-left {
+      display: block; }
+      .inner_page_news .media .media-left .media_img_holder {
+        margin: 0 auto 15px; }
+    .inner_page_news .media .media-body {
+      display: block; } }
+@media (max-width: 480px) {
+  .menu_section_td .menu_icon_holder img {
+    max-width: 60px; }
+
+  .sub_menu_box .sub_menu_icon_holder img {
+    max-width: 60px; }
+
+  .inn_box_number {
+    font-size: 15px; }
+
+  .inn_box_title {
+    font-size: 15px; } }
+@media (max-width: 370px) {
+  header.landing_header .brand_wap {
+    padding: 18px 0;
+    width: 190px; } }
+@media (max-width: 318px) {
+  .inn_header .inn_logo_wrap {
+    width: 160px; }
+  .inn_header .menu-toggle {
+    padding: 18px 15px; } }
+
+/*# sourceMappingURL=media.css.map */
+

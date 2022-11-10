@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AuditProject/Pages/DirectBenificiaryExpenditure.aspx" hash="fffffff1d8439188" filehash="c3f8a51fb5ebd615" flags="110000" assembly="App_Web_4taxyxrp" type="ASP.pages_directbenificiaryexpenditure_aspx">
+    <filedeps>
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master" />
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master.cs" />
+        <filedep name="/AuditProject/Pages/DirectBenificiaryExpenditure.aspx" />
+        <filedep name="/AuditProject/Pages/DirectBenificiaryExpenditure.aspx.cs" />
+    </filedeps>
+</preserve>

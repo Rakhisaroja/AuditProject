@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AuditProject/Pages/FinanceWorkingGroup.aspx" hash="fffffff1d8439188" filehash="1eb1da149c48f95f" flags="110000" assembly="App_Web_yghzm0bx" type="ASP.pages_financeworkinggroup_aspx">
+    <filedeps>
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master" />
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master.cs" />
+        <filedep name="/AuditProject/Pages/FinanceWorkingGroup.aspx" />
+        <filedep name="/AuditProject/Pages/FinanceWorkingGroup.aspx.cs" />
+    </filedeps>
+</preserve>

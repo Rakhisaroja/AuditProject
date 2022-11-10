@@ -1,0 +1,357 @@
+﻿body {
+	color: #392F2F;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0px;
+	padding: 0px;
+	text-align:center;
+	/*background-color:#A2CFF3;#CFE5F6;*/
+	background-color:Black;
+}
+.ComboMal
+{
+	font-family:SMeera;
+	font-size:15px;
+	
+	width:280px;
+	
+}
+.lblMal
+{
+	
+	font-size:15px;
+	font-family :AnjaliOldLipi;
+	color:#3D0211; /*#2C416F;*/
+}
+#container {
+	margin: 1px auto;
+	text-align: left;
+	width: 979px;
+	background-image:url(../images/contentbg.gif);
+}
+#header 
+{   border-style:solid;
+	border-color:#C7DCED;
+	border-width:thin;
+	background-image:url(../images/head.jpg);
+	background-color:White;
+	width:979px;
+	height:150px;
+	display:block;
+}
+#border {
+	background-image:url(../images/border.gif);
+	background-repeat: repeat-y;
+	width:979px;
+	border-style:solid;
+	border-color:#C7DCED;
+	border-width:thin;
+}
+#main {
+	background-image:url(../images/contentbg.gif);
+	/*background-color:#E9F5FA;*/
+	margin: 0px 12px 0px 10px;
+	background-repeat: repeat-x;
+
+	
+}
+#mainmenu
+{
+	background-image:url(../images/border.gif);
+	/*background-image:url(images/mainmenu1.gif;*/
+	
+	background-repeat: repeat-y;
+	width:979px;
+	border-style:solid;
+	border-color:#5DA1D7;
+	border-width:thin;
+	height:25px;
+}
+#left
+{
+	width:200px;
+	float:left;
+	display:inline;
+	background-image:url(../images/contentbg.gif);
+	background-color:#abe4fe;
+}
+#right
+{
+	float:right;
+	width:680px;
+	border:[solid][1px][blue];
+	background-image:url(../images/contentbg.gif);
+	display:inline;
+}
+#right1
+{
+	float:right;
+	width:200px;
+	border:[solid][1px][blue];
+	background-image:url(../images/contentbg.gif);
+	display:inline;
+}
+.content {
+	width:620px;
+	float:right;
+}
+/************************************/
+#menu {
+	background-image:url(../images/menu.gif);
+	width:200px;
+	height:449px;
+	margin-left:50px;
+	border-style:inset;
+	border-color:#C7DCED;
+	border-width:thin;
+	
+}
+#menu ul {
+	padding: 30px 0px 0px 0px;
+	width:150px;
+	margin-left:15px;
+}
+#menu li {
+	background-image: url(../images/arrow.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+	border-bottom: 1px dotted #2e2304;
+	list-style-type: none;
+	padding: 4px 30px 4px 0px;
+	text-align:right;
+}
+#menu a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: 900;
+	color: #2e260f;
+	text-decoration: none;
+	font-size: 12px;
+	
+}
+
+
+/*#footer {
+	background-color:#8bcaef;
+	background-image:url(images/borderfooter.gif);
+	height:74px;
+	width:979px;
+	border-bottom-style:solid;
+	border-bottom-width:thin;
+	border-left-style:solid;
+	border-left-width:thin;
+	border-right-style:solid;
+	border-right-width:thin;
+	border-color:#C7DCED;
+}
+#footerend {
+	background-image:url(images/borderfooterend.gif);
+	background-repeat: no-repeat;
+	width:979px;
+	height:9px;
+	display:block;
+}
+#payment {
+	float:left;
+	display:inline;
+	margin: 10px 0px 20px 135px;
+}
+#copyright {
+	background-image:url(images/copyright.jpg);
+	background-repeat:no-repeat;
+	width:500px;
+	height:43px;
+	display:inline;
+	margin-left:103px;
+	float:left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: 900;
+	color: #463d16;
+	padding: 30px 20px 0px 20px;
+	text-align:center;
+	
+}*/
+#footer a
+
+{
+      color:#254A73;
+      text-decoration:underline;
+      font-size:12px;
+      font-weight:bold;
+}
+
+
+/*#footer a:visited { text-decoration:underline;}
+
+#footer a:hover { text-decoration:none; }*/
+/* Till Here*/
+
+/* Footer */
+
+#SubFooter
+{
+	width:975px;
+	height:9px;
+	background: url(../images/borderfooterend.gif) repeat left 5px;
+}
+#footer {
+	width: 979px;
+	height: 40px;
+	margin: 0px auto 0px auto;
+	border-top: 1px solid #B6BFD0;
+    font-family: trebuchet ms;
+      font-size : 12px;
+	background: url(../images/borderfooter.gif) repeat left 5px;
+}
+
+	
+
+/*#footer p {
+	margin: 0;
+	padding-top: 18px;
+	line-height: normal;
+	text-align: center;
+	color:Black;
+}*/
+
+/*#footer a {
+	color: #576475;
+}*/
+#footerend {
+	background-image:url(../images/borderfooterend.gif);
+	background-repeat: no-repeat;
+	width:979px;
+	height:9px;
+	display:block;
+	margin: 0px auto 40px auto;
+}
+#copyright {
+	
+    
+	
+	height:50px;
+	
+
+	  font-family: trebuchet ms;
+      font-size : 12px;
+	text-align:center;
+	color:White;
+	
+	
+}
+#copyright a {
+	  font-family: trebuchet ms;
+      font-size : 12px;
+	color: Yellow;
+	
+	
+	/*margin-left:45px;*/
+}
+
+/***********************************************/
+.textbox
+{
+	width:140Px;
+	font-family:Trebuchet MS;
+	font-size:12Px;
+}
+
+/**********************************************/
+
+    
+.animatedtabs{
+border-bottom: 1px solid gray;
+overflow: hidden;
+width: 100%;
+font-size: 12px; /*font of menu text*/
+}
+
+
+.animatedtabs ul{
+list-style-type: none;
+margin: 0;
+margin-left: 10px; /*offset of first tab relative to page left edge*/
+padding: 0;
+}
+
+.animatedtabs li{
+float:left;
+margin: 0;
+padding: 0;
+vertical-align:middle;
+}
+
+.animatedtabs a{
+float: left;
+position: relative;
+top: 5px; /* 1) Number of pixels to protrude up for selected tab. Should equal (3) MINUS (2) below */
+background:url(../images/button1.gif);
+margin: 0;
+margin-right: 3px; /*Spacing between each tab*/
+padding: 0 0 0 9px;
+text-decoration: none;
+
+}
+
+.animatedtabs a span{
+float: left;
+position: relative;
+display: block;
+background:url(../images/button1.gif);
+
+padding: 5px 14px 3px 5px; /* 2) Padding within each tab. The 3rd value, or 3px, should equal (1) MINUS (3) */
+font-weight: bold;
+color:#2E4BA8 ;
+}
+
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+.animatedtabs a span {float:none;}
+/* End IE5-Mac hack */
+
+
+.animatedtabs .selected a{
+background-position: 0 -125px;
+top: 0;
+}
+
+.animatedtabs .selected a span{
+background-position: 100% -125px;
+color: black;
+padding-bottom: 8px; /* 3) Bottom padding of selected tab. Should equal (1) PLUS (2) above */
+top: 0;
+}
+
+.animatedtabs a:hover{
+background-position: 0% -125px;
+top: 0;
+}
+
+.animatedtabs a:hover span{
+background-position: 100% -125px;
+padding-bottom: 8px; /* 3) Bottom padding of selected tab. Should equal (1) PLUS (2) above */
+top: 0;
+}
+
+.MenuLink
+{
+	
+	font-family:arial;
+	font-size:13px;
+	text-align:Left;
+	color:Black;
+	cursor:hand;
+	font-weight:bold;
+}
+
+.sidebar
+{
+	font-family:Arial ;
+	text-align :left;
+	color:#000066;
+	font-size :12px;
+	font-weight:normal;
+	
+}
+
+

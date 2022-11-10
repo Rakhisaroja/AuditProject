@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AuditProject/Pages/LicenseDetails_Urban.aspx" hash="fffffff1d8439188" filehash="db93ae758d8d8bbc" flags="110000" assembly="App_Web_o3x4j7cd" type="ASP.pages_licensedetails_urban_aspx">
+    <filedeps>
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master" />
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master.cs" />
+        <filedep name="/AuditProject/Pages/LicenseDetails_Urban.aspx" />
+        <filedep name="/AuditProject/Pages/LicenseDetails_Urban.aspx.cs" />
+    </filedeps>
+</preserve>

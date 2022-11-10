@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AuditProject/Pages/WelfareWorkingGroup.aspx" hash="fffffff1d8439188" filehash="cebc1720afaf8578" flags="110000" assembly="App_Web_ae76apgr" type="ASP.pages_welfareworkinggroup_aspx">
+    <filedeps>
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master" />
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master.cs" />
+        <filedep name="/AuditProject/Pages/WelfareWorkingGroup.aspx" />
+        <filedep name="/AuditProject/Pages/WelfareWorkingGroup.aspx.cs" />
+    </filedeps>
+</preserve>

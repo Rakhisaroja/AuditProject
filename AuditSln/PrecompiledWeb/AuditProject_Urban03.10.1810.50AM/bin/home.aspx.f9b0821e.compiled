@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/AuditProject/Pages/Home.aspx" hash="fffffff1d8439188" filehash="f74a8f4f20a87b39" flags="110000" assembly="App_Web_nf15garc" type="ASP.pages_home_aspx">
+    <filedeps>
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master" />
+        <filedep name="/AuditProject/Pages/AuditMasterPage.master.cs" />
+        <filedep name="/AuditProject/Pages/Home.aspx" />
+        <filedep name="/AuditProject/Pages/Home.aspx.cs" />
+    </filedeps>
+</preserve>
